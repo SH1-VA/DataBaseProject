@@ -1,0 +1,21 @@
+﻿@model IList<DataBase.Storage.Entity.Group>
+
+	<h1>Группы:</h1>
+
+	<table>
+		<tr>
+			<th>
+				Идентификатор группы
+			</th>
+			<th>
+				Номер группы (название)
+			</th>
+		</tr>
+		@foreach(var group in Model)
+		{
+			<tr>
+				<td>@group.Id</td>
+				<td>@group.Name</td>
+			</tr>
+		}
+	</table>
