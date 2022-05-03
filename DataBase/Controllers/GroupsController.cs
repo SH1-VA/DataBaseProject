@@ -21,7 +21,7 @@
 
         [HttpPut]
         [Route("groups")]
-        public Task Create([FromBody] CreateGroupRequest request) => _manager.Create(request.Name);
+        public Task Create([FromBody] CreateGroupRequest request) => _manager.Create(request.Name, request.NumberOfStudents, request.Orientation);
 
         [HttpDelete]
         [Route("groups/{id:int}")]

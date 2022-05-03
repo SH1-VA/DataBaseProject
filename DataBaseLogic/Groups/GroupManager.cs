@@ -7,9 +7,9 @@
         {
             _context = context;
         }
-        public async Task Create(string name)
+        public async Task Create(string name, int number, string orientation)
         {
-            var group = new Group { Name = name };
+            var group = new Group { Name = name, NumberOfStudents = number, Orientation = orientation };
             _context.Groups.Add(group);
             await _context.SaveChangesAsync();
         }

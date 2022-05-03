@@ -2,9 +2,9 @@
 {
     public class Student: Person
     {    
-        //public bool Subgroup { get; set; }                  //Подгруппа студента; A - 0, B - 1
+        public bool Subgroup { get; set; }                  //Подгруппа студента; A - 0, B - 1
         //public ModularJournal ModularJournal { get; set; }  //Успеваемость студента
-        //public int Number { get; set; }                     //Номер студента по списку
+        public int Number { get; set; }                     //Номер студента по списку
         [Required]
         public int GroupId { get; set; }
         [ForeignKey(nameof(GroupId))]
