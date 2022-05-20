@@ -26,3 +26,17 @@ D:\GitHub\DataBaseProject\DataBaseStorage\obj\Debug\net6.0\refint\DataBaseStorag
 D:\GitHub\DataBaseProject\DataBaseStorage\obj\Debug\net6.0\DataBaseStorage.pdb
 D:\GitHub\DataBaseProject\DataBaseStorage\obj\Debug\net6.0\DataBaseStorage.genruntimeconfig.cache
 D:\GitHub\DataBaseProject\DataBaseStorage\obj\Debug\net6.0\ref\DataBaseStorage.dll
+C:\Users\User\Source\Repos\DataBaseProject\DataBaseStorage\bin\Debug\net6.0\DataBaseStorage.deps.json
+C:\Users\User\Source\Repos\DataBaseProject\DataBaseStorage\bin\Debug\net6.0\DataBaseStorage.runtimeconfig.json
+C:\Users\User\Source\Repos\DataBaseProject\DataBaseStorage\bin\Debug\net6.0\DataBaseStorage.dll
+C:\Users\User\Source\Repos\DataBaseProject\DataBaseStorage\bin\Debug\net6.0\DataBaseStorage.pdb
+C:\Users\User\Source\Repos\DataBaseProject\DataBaseStorage\obj\Debug\net6.0\DataBaseStorage.csproj.AssemblyReference.cache
+C:\Users\User\Source\Repos\DataBaseProject\DataBaseStorage\obj\Debug\net6.0\DataBaseStorage.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\User\Source\Repos\DataBaseProject\DataBaseStorage\obj\Debug\net6.0\DataBaseStorage.AssemblyInfoInputs.cache
+C:\Users\User\Source\Repos\DataBaseProject\DataBaseStorage\obj\Debug\net6.0\DataBaseStorage.AssemblyInfo.cs
+C:\Users\User\Source\Repos\DataBaseProject\DataBaseStorage\obj\Debug\net6.0\DataBaseStorage.csproj.CoreCompileInputs.cache
+C:\Users\User\Source\Repos\DataBaseProject\DataBaseStorage\obj\Debug\net6.0\DataBaseStorage.dll
+C:\Users\User\Source\Repos\DataBaseProject\DataBaseStorage\obj\Debug\net6.0\refint\DataBaseStorage.dll
+C:\Users\User\Source\Repos\DataBaseProject\DataBaseStorage\obj\Debug\net6.0\DataBaseStorage.pdb
+C:\Users\User\Source\Repos\DataBaseProject\DataBaseStorage\obj\Debug\net6.0\DataBaseStorage.genruntimeconfig.cache
+C:\Users\User\Source\Repos\DataBaseProject\DataBaseStorage\obj\Debug\net6.0\ref\DataBaseStorage.dll
