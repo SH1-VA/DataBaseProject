@@ -119,12 +119,12 @@ D:\GitHub\DataBaseProject\DataBase\obj\Debug\net6.0\DataBase.RazorAssemblyInfo.c
 D:\GitHub\DataBaseProject\DataBase\obj\Debug\net6.0\DataBase.RazorAssemblyInfo.cs
 D:\GitHub\DataBaseProject\DataBase\obj\Debug\net6.0\staticwebassets.build.json
 D:\GitHub\DataBaseProject\DataBase\obj\Debug\net6.0\staticwebassets.development.json
-D:\GitHub\DataBaseProject\DataBase\obj\Debug\net6.0\scopedcss\Views\Shared\_Layout.cshtml.rz.scp.css
 D:\GitHub\DataBaseProject\DataBase\obj\Debug\net6.0\scopedcss\bundle\DataBase.styles.css
-D:\GitHub\DataBaseProject\DataBase\obj\Debug\net6.0\scopedcss\projectbundle\DataBase.bundle.scp.css
 D:\GitHub\DataBaseProject\DataBase\obj\Debug\net6.0\DataBase.csproj.CopyComplete
 D:\GitHub\DataBaseProject\DataBase\obj\Debug\net6.0\DataBase.dll
 D:\GitHub\DataBaseProject\DataBase\obj\Debug\net6.0\refint\DataBase.dll
 D:\GitHub\DataBaseProject\DataBase\obj\Debug\net6.0\DataBase.pdb
 D:\GitHub\DataBaseProject\DataBase\obj\Debug\net6.0\DataBase.genruntimeconfig.cache
 D:\GitHub\DataBaseProject\DataBase\obj\Debug\net6.0\ref\DataBase.dll
+D:\GitHub\DataBaseProject\DataBase\obj\Debug\net6.0\scopedcss\Views\Shared\_Layout.cshtml.rz.scp.css
+D:\GitHub\DataBaseProject\DataBase\obj\Debug\net6.0\scopedcss\projectbundle\DataBase.bundle.scp.css

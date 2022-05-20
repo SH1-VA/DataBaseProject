@@ -1,6 +1,6 @@
 ﻿namespace DataBaseLogic.Teachers
 {
-    public class TeacherManager: ITeacherManager
+    public class TeacherManager : ITeacherManager
     {
         private readonly UniversityContext _context;
         public TeacherManager(UniversityContext context)

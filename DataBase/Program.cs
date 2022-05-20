@@ -8,9 +8,8 @@ var services = builder.Services;
 services.AddControllersWithViews();
 services.AddScoped<IGroupManager, GroupManager>();
 services.AddScoped<IStudentManager, StudentManager>();
-//services.AddScoped<ISpecialityManager, SpecialityManager>();
 services.AddScoped<ITeacherManager, TeacherManager>();
-//services.AddScoped<ITeacherManager, TeacherManager>();
+services.AddScoped<ISpecialityManager, SpecialityManager>();
 
 // Add DataBase Context.
 var connectionString = builder.Configuration.GetConnectionString("DbConnection");
@@ -18,7 +17,7 @@ services.AddDbContext<UniversityContext>(param => param.UseSqlServer(connectionS
 
 var app = builder.Build();
 
-// Configure the HTTP request pipeline.
+// Configure the HTTP request pipeline. 
 if (!app.Environment.IsDevelopment())
 {
     app.UseExceptionHandler("/Home/Error");
@@ -35,6 +34,6 @@ app.UseAuthorization();
 
 app.MapControllerRoute(
     name: "default",
-    pattern: "{controller=Students}/{action=Main}/{id?}");
+    pattern: "{controller=Specialitys}/{action=Main}/{id?}");
 
 app.Run();

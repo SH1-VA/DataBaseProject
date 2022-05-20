@@ -1,12 +1,6 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-
-namespace DataBaseLogic.Students
+﻿namespace DataBaseLogic.Students
 {
-    public class StudentManager : IStudentManager
+    public class StudentManager: IStudentManager
     {
         private readonly UniversityContext _context;
         public StudentManager(UniversityContext context)

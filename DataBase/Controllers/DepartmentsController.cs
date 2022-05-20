@@ -19,7 +19,7 @@ namespace DataBase.Controllers
 
         [HttpGet]
         [Route("departments")]
-        //public Task<IList<Department>> GetAll() => _manager.GetAll();
+        public Task<IList<Department>> GetAll() => _manager.GetAll();
 
         [HttpPut]
         [Route("departments")]

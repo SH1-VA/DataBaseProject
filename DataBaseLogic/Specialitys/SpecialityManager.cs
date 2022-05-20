@@ -1,6 +1,6 @@
 ﻿namespace DataBaseLogic.Specialitys
 {
-    public class SpecialityManager
+    public class SpecialityManager: ISpecialityManager
     {
         private readonly UniversityContext _context;
         public SpecialityManager(UniversityContext context)
