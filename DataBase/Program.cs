@@ -1,4 +1,3 @@
-using DataBaseLogic.Groups;
 using DataBaseStorage;
 using Microsoft.EntityFrameworkCore;
 
@@ -8,6 +7,10 @@ var services = builder.Services;
 // Add services to the container.
 services.AddControllersWithViews();
 services.AddScoped<IGroupManager, GroupManager>();
+services.AddScoped<IStudentManager, StudentManager>();
+//services.AddScoped<ISpecialityManager, SpecialityManager>();
+services.AddScoped<ITeacherManager, TeacherManager>();
+//services.AddScoped<ITeacherManager, TeacherManager>();
 
 // Add DataBase Context.
 var connectionString = builder.Configuration.GetConnectionString("DbConnection");
@@ -32,6 +35,6 @@ app.UseAuthorization();
 
 app.MapControllerRoute(
     name: "default",
-    pattern: "{controller=Groups}/{action=Main}/{id?}");
+    pattern: "{controller=Students}/{action=Main}/{id?}");
 
 app.Run();

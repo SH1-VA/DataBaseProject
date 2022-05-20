@@ -1,4 +1,9 @@
 ﻿global using DataBaseLogic.Groups;
+global using DataBaseLogic.Students;
+global using DataBaseLogic.Departments;
+global using DataBaseLogic.Disciplines;
+global using DataBaseLogic.Teachers;
+global using DataBaseLogic.Specialitys;
 global using Microsoft.AspNetCore.Mvc;
 global using DataBase.Storage.Entity;
 global using DataBase.Models;
