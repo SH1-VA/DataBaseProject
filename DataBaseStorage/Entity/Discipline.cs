@@ -8,9 +8,9 @@
         //public List<Teacher> Teachers { get; set; }     //Список преподавателей
         public int Hours { get; set; }                  //Кол-во учебных часов за курс
 
-        public int DepartmentId { get; set; }
-        [ForeignKey(nameof(DepartmentId))]
-        public virtual Department Department { get; set; } //Кафедра на которой преподают дисциплину
+        //public int DepartmentId { get; set; }
+        //[ForeignKey(nameof(DepartmentId))]
+        //public virtual Department Department { get; set; } //Кафедра на которой преподают дисциплину
         //public Discipline(int id, string name, Department department, List<Teacher> teachers, int hours)
         //{
         //    Id = id;
