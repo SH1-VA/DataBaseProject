@@ -1,29 +1,42 @@
 ﻿@model IList<DataBase.Storage.Entity.Group>
 
-	<h1>Группы:</h1>
-
-	<table>
+	<img style="position: absolute; width: 199px; height: 113px; left: 28px; top: 60px;" 
+		 src="~/Pictures/эмблема.png">
+	<h1 style="position: absolute;width: 688px;height: 102px;left: 260px;top: 75px;
+font-family: 'Inter';font-style: normal;font-weight: 400;
+font-size: 32px;line-height: 39px;color: #2A3381;">Автоматизированное рабочее место
+<br> ФГБОУ ВО «МГТУ «СТАНКИН»</h1>
+	<img style="position: absolute;
+width: 1380px;
+height: 25px;
+left: 0px;
+top: 190px;" src="~/Pictures/линии.jpg">
+	<h2 style="position: absolute;width: 688px;height: 102px;left: 40px;top: 235px;
+font-family: 'Inter';font-style: normal;font-weight: 400;
+font-size: 32px;line-height: 39px;">СПИСОК ГРУПП</h2>
+	<table border="1" cellpadding="10" cellspacing="10" style="margin-top: 240px; left: 300px; border: 1px solid black">
 		<tr>
-			<th>
-				Идентификатор группы
+			<th border="1" style="border: 1px solid black">
+				ГРУППА
 			</th>
-			<th>
-				Номер группы (название)
+			<th border="1" style="border: 1px solid black">
+				ЧИСЛЕННОСТЬ
 			</th>
-			<th>
-				Кол-во студентов
-			</th>
-			<th>
-				Направление подготовки
+			<th border="1" style="border: 1px solid black">
+				НАПРАВЛЕНИЕ ПОДГОТОВКИ
 			</th>
 		</tr>
 		@foreach(var group in Model)
 		{
 			<tr>
-				<td>@group.Id</td>
-				<td>@group.Name</td>
-				<td>@group.NumberOfStudents</td>
-				<td>@group.Orientation</td>
+				<td border="1" style="border: 1px solid black">@group.Name</td>
+				<td border="1" style="border: 1px solid black" align="center">@group.NumberOfStudents</td>
+				<td border="1" style="border: 1px solid black">@group.Orientation</td>
 			</tr>
 		}
 	</table>
+	<img style="position: absolute;
+width: 1380px;
+height: 25px;
+left: 0px; margin-top: 45px" src="~/Pictures/линии.jpg">
+
