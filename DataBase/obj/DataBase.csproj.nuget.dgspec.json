@@ -1,23 +1,23 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\Admin\\Documents\\GitHub\\DataBaseProject\\DataBase\\DataBase.csproj": {}
+    "C:\\Users\\User\\Source\\Repos\\DataBaseProject\\DataBase\\DataBase.csproj": {}
   },
   "projects": {
-    "C:\\Users\\Admin\\Documents\\GitHub\\DataBaseProject\\DataBaseLogic\\DataBaseLogic.csproj": {
+    "C:\\Users\\User\\Source\\Repos\\DataBaseProject\\DataBaseLogic\\DataBaseLogic.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\Admin\\Documents\\GitHub\\DataBaseProject\\DataBaseLogic\\DataBaseLogic.csproj",
+        "projectUniqueName": "C:\\Users\\User\\Source\\Repos\\DataBaseProject\\DataBaseLogic\\DataBaseLogic.csproj",
         "projectName": "DataBaseLogic",
-        "projectPath": "C:\\Users\\Admin\\Documents\\GitHub\\DataBaseProject\\DataBaseLogic\\DataBaseLogic.csproj",
-        "packagesPath": "C:\\Users\\Admin\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\Admin\\Documents\\GitHub\\DataBaseProject\\DataBaseLogic\\obj\\",
+        "projectPath": "C:\\Users\\User\\Source\\Repos\\DataBaseProject\\DataBaseLogic\\DataBaseLogic.csproj",
+        "packagesPath": "C:\\Users\\User\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\User\\Source\\Repos\\DataBaseProject\\DataBaseLogic\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
         ],
         "configFilePaths": [
-          "C:\\Users\\Admin\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\User\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
@@ -32,8 +32,8 @@
           "net6.0": {
             "targetAlias": "net6.0",
             "projectReferences": {
-              "C:\\Users\\Admin\\Documents\\GitHub\\DataBaseProject\\DataBaseStorage\\DataBaseStorage.csproj": {
-                "projectPath": "C:\\Users\\Admin\\Documents\\GitHub\\DataBaseProject\\DataBaseStorage\\DataBaseStorage.csproj"
+              "C:\\Users\\User\\Source\\Repos\\DataBaseProject\\DataBaseStorage\\DataBaseStorage.csproj": {
+                "projectPath": "C:\\Users\\User\\Source\\Repos\\DataBaseProject\\DataBaseStorage\\DataBaseStorage.csproj"
               }
             }
           }
@@ -66,20 +66,20 @@
         }
       }
     },
-    "C:\\Users\\Admin\\Documents\\GitHub\\DataBaseProject\\DataBaseStorage\\DataBaseStorage.csproj": {
+    "C:\\Users\\User\\Source\\Repos\\DataBaseProject\\DataBaseStorage\\DataBaseStorage.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\Admin\\Documents\\GitHub\\DataBaseProject\\DataBaseStorage\\DataBaseStorage.csproj",
+        "projectUniqueName": "C:\\Users\\User\\Source\\Repos\\DataBaseProject\\DataBaseStorage\\DataBaseStorage.csproj",
         "projectName": "DataBaseStorage",
-        "projectPath": "C:\\Users\\Admin\\Documents\\GitHub\\DataBaseProject\\DataBaseStorage\\DataBaseStorage.csproj",
-        "packagesPath": "C:\\Users\\Admin\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\Admin\\Documents\\GitHub\\DataBaseProject\\DataBaseStorage\\obj\\",
+        "projectPath": "C:\\Users\\User\\Source\\Repos\\DataBaseProject\\DataBaseStorage\\DataBaseStorage.csproj",
+        "packagesPath": "C:\\Users\\User\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\User\\Source\\Repos\\DataBaseProject\\DataBaseStorage\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
         ],
         "configFilePaths": [
-          "C:\\Users\\Admin\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\User\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
@@ -150,20 +150,20 @@
         }
       }
     },
-    "C:\\Users\\Admin\\Documents\\GitHub\\DataBaseProject\\DataBase\\DataBase.csproj": {
+    "C:\\Users\\User\\Source\\Repos\\DataBaseProject\\DataBase\\DataBase.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\Admin\\Documents\\GitHub\\DataBaseProject\\DataBase\\DataBase.csproj",
+        "projectUniqueName": "C:\\Users\\User\\Source\\Repos\\DataBaseProject\\DataBase\\DataBase.csproj",
         "projectName": "DataBase",
-        "projectPath": "C:\\Users\\Admin\\Documents\\GitHub\\DataBaseProject\\DataBase\\DataBase.csproj",
-        "packagesPath": "C:\\Users\\Admin\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\Admin\\Documents\\GitHub\\DataBaseProject\\DataBase\\obj\\",
+        "projectPath": "C:\\Users\\User\\Source\\Repos\\DataBaseProject\\DataBase\\DataBase.csproj",
+        "packagesPath": "C:\\Users\\User\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\User\\Source\\Repos\\DataBaseProject\\DataBase\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
         ],
         "configFilePaths": [
-          "C:\\Users\\Admin\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\User\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
@@ -178,11 +178,11 @@
           "net6.0": {
             "targetAlias": "net6.0",
             "projectReferences": {
-              "C:\\Users\\Admin\\Documents\\GitHub\\DataBaseProject\\DataBaseLogic\\DataBaseLogic.csproj": {
-                "projectPath": "C:\\Users\\Admin\\Documents\\GitHub\\DataBaseProject\\DataBaseLogic\\DataBaseLogic.csproj"
+              "C:\\Users\\User\\Source\\Repos\\DataBaseProject\\DataBaseLogic\\DataBaseLogic.csproj": {
+                "projectPath": "C:\\Users\\User\\Source\\Repos\\DataBaseProject\\DataBaseLogic\\DataBaseLogic.csproj"
               },
-              "C:\\Users\\Admin\\Documents\\GitHub\\DataBaseProject\\DataBaseStorage\\DataBaseStorage.csproj": {
-                "projectPath": "C:\\Users\\Admin\\Documents\\GitHub\\DataBaseProject\\DataBaseStorage\\DataBaseStorage.csproj"
+              "C:\\Users\\User\\Source\\Repos\\DataBaseProject\\DataBaseStorage\\DataBaseStorage.csproj": {
+                "projectPath": "C:\\Users\\User\\Source\\Repos\\DataBaseProject\\DataBaseStorage\\DataBaseStorage.csproj"
               }
             }
           }

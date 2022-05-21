@@ -8,45 +8,53 @@ build_property.PlatformNeutralAssembly =
 build_property._SupportedPlatformList = Linux,macOS,Windows
 build_property.RootNamespace = DataBase
 build_property.RootNamespace = DataBase
-build_property.ProjectDir = C:\Users\Admin\Documents\GitHub\DataBaseProject\DataBase\
+build_property.ProjectDir = C:\Users\User\Source\Repos\DataBaseProject\DataBase\
 build_property.RazorLangVersion = 6.0
 build_property.SupportLocalizedComponentNames = 
 build_property.GenerateRazorMetadataSourceChecksumAttributes = 
-build_property.MSBuildProjectDirectory = C:\Users\Admin\Documents\GitHub\DataBaseProject\DataBase
+build_property.MSBuildProjectDirectory = C:\Users\User\Source\Repos\DataBaseProject\DataBase
 build_property._RazorSourceGeneratorDebug = 
 
-[C:/Users/Admin/Documents/GitHub/DataBaseProject/DataBase/Views/Groups/Main.cshtml]
+[C:/Users/User/Source/Repos/DataBaseProject/DataBase/Views/Departaments/Main.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcRGVwYXJ0YW1lbnRzXE1haW4uY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/User/Source/Repos/DataBaseProject/DataBase/Views/Disciplines/Main.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcRGlzY2lwbGluZXNcTWFpbi5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/User/Source/Repos/DataBaseProject/DataBase/Views/Groups/Main.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcR3JvdXBzXE1haW4uY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/Admin/Documents/GitHub/DataBaseProject/DataBase/Views/Shared/Error.cshtml]
+[C:/Users/User/Source/Repos/DataBaseProject/DataBase/Views/Shared/Error.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXEVycm9yLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/Admin/Documents/GitHub/DataBaseProject/DataBase/Views/Shared/_ValidationScriptsPartial.cshtml]
+[C:/Users/User/Source/Repos/DataBaseProject/DataBase/Views/Shared/_ValidationScriptsPartial.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9WYWxpZGF0aW9uU2NyaXB0c1BhcnRpYWwuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/Admin/Documents/GitHub/DataBaseProject/DataBase/Views/Specialitys/Main.cshtml]
+[C:/Users/User/Source/Repos/DataBaseProject/DataBase/Views/Specialitys/Main.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU3BlY2lhbGl0eXNcTWFpbi5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/Admin/Documents/GitHub/DataBaseProject/DataBase/Views/Students/Main.cshtml]
+[C:/Users/User/Source/Repos/DataBaseProject/DataBase/Views/Students/Main.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU3R1ZGVudHNcTWFpbi5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/Admin/Documents/GitHub/DataBaseProject/DataBase/Views/Teachers/Main.cshtml]
+[C:/Users/User/Source/Repos/DataBaseProject/DataBase/Views/Teachers/Main.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVGVhY2hlcnNcTWFpbi5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/Admin/Documents/GitHub/DataBaseProject/DataBase/Views/_ViewImports.cshtml]
+[C:/Users/User/Source/Repos/DataBaseProject/DataBase/Views/_ViewImports.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcX1ZpZXdJbXBvcnRzLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/Admin/Documents/GitHub/DataBaseProject/DataBase/Views/_ViewStart.cshtml]
+[C:/Users/User/Source/Repos/DataBaseProject/DataBase/Views/_ViewStart.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcX1ZpZXdTdGFydC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/Admin/Documents/GitHub/DataBaseProject/DataBase/Views/Shared/_Layout.cshtml]
+[C:/Users/User/Source/Repos/DataBaseProject/DataBase/Views/Shared/_Layout.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9MYXlvdXQuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = b-1wmnm95l21
