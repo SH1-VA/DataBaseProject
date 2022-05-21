@@ -40,3 +40,17 @@ C:\Users\User\Source\Repos\DataBaseProject\DataBaseStorage\obj\Debug\net6.0\refi
 C:\Users\User\Source\Repos\DataBaseProject\DataBaseStorage\obj\Debug\net6.0\DataBaseStorage.pdb
 C:\Users\User\Source\Repos\DataBaseProject\DataBaseStorage\obj\Debug\net6.0\DataBaseStorage.genruntimeconfig.cache
 C:\Users\User\Source\Repos\DataBaseProject\DataBaseStorage\obj\Debug\net6.0\ref\DataBaseStorage.dll
+C:\Users\Admin\Documents\GitHub\DataBaseProject\DataBaseStorage\bin\Debug\net6.0\DataBaseStorage.deps.json
+C:\Users\Admin\Documents\GitHub\DataBaseProject\DataBaseStorage\bin\Debug\net6.0\DataBaseStorage.runtimeconfig.json
+C:\Users\Admin\Documents\GitHub\DataBaseProject\DataBaseStorage\bin\Debug\net6.0\DataBaseStorage.dll
+C:\Users\Admin\Documents\GitHub\DataBaseProject\DataBaseStorage\bin\Debug\net6.0\DataBaseStorage.pdb
+C:\Users\Admin\Documents\GitHub\DataBaseProject\DataBaseStorage\obj\Debug\net6.0\DataBaseStorage.csproj.AssemblyReference.cache
+C:\Users\Admin\Documents\GitHub\DataBaseProject\DataBaseStorage\obj\Debug\net6.0\DataBaseStorage.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Admin\Documents\GitHub\DataBaseProject\DataBaseStorage\obj\Debug\net6.0\DataBaseStorage.AssemblyInfoInputs.cache
+C:\Users\Admin\Documents\GitHub\DataBaseProject\DataBaseStorage\obj\Debug\net6.0\DataBaseStorage.AssemblyInfo.cs
+C:\Users\Admin\Documents\GitHub\DataBaseProject\DataBaseStorage\obj\Debug\net6.0\DataBaseStorage.csproj.CoreCompileInputs.cache
+C:\Users\Admin\Documents\GitHub\DataBaseProject\DataBaseStorage\obj\Debug\net6.0\DataBaseStorage.dll
+C:\Users\Admin\Documents\GitHub\DataBaseProject\DataBaseStorage\obj\Debug\net6.0\refint\DataBaseStorage.dll
+C:\Users\Admin\Documents\GitHub\DataBaseProject\DataBaseStorage\obj\Debug\net6.0\DataBaseStorage.pdb
+C:\Users\Admin\Documents\GitHub\DataBaseProject\DataBaseStorage\obj\Debug\net6.0\DataBaseStorage.genruntimeconfig.cache
+C:\Users\Admin\Documents\GitHub\DataBaseProject\DataBaseStorage\obj\Debug\net6.0\ref\DataBaseStorage.dll
