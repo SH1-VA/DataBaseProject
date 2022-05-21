@@ -6,6 +6,8 @@ var services = builder.Services;
 
 // Add services to the container.
 services.AddControllersWithViews();
+services.AddScoped<IDepartmentManager, DepartmentManager>();
+services.AddScoped<IDisciplineManager, DisciplineManager>();
 services.AddScoped<IGroupManager, GroupManager>();
 services.AddScoped<IStudentManager, StudentManager>();
 services.AddScoped<ITeacherManager, TeacherManager>();
@@ -34,6 +36,6 @@ app.UseAuthorization();
 
 app.MapControllerRoute(
     name: "default",
-    pattern: "{controller=Students}/{action=Main}/{id?}");
+    pattern: "{controller=Departments}/{action=Main}/{id?}");
 
 app.Run();

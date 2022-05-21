@@ -1,6 +1,6 @@
 ﻿namespace DataBaseLogic.Departments
 {
-    public class DepartmentManager
+    public class DepartmentManager: IDepartmentManager
     {
         private readonly UniversityContext _context;
         public DepartmentManager(UniversityContext context)
