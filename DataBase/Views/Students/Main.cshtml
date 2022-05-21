@@ -86,6 +86,30 @@ font-size: 32px;line-height: 39px;">
 
     </tr>}
     </table>
+     @using(Html.BeginForm("название метода", "название контроллера", FormMethod.Post))
+    {
+        <textarea cols="20" rows="1" LastName="LastName"></textarea>
+        <textarea cols="20" rows="1" Name="Name"></textarea>
+        <textarea cols="20" rows="1" PhoneNumber="PhoneNumber"></textarea>
+        <textarea cols="20" rows="1" Email="Email"></textarea>
+        <button type="submit">Добавить</button>
+    }
+    <br>
+    @using(Html.BeginForm("название метода", "название контроллера", FormMethod.Post))
+    {
+        <textarea cols="5" rows="1" ID="ID"></textarea>
+        <button type="submit">Удалить</button>
+    }
+    <br>
+    @using(Html.BeginForm("название метода", "название контроллера", FormMethod.Post))
+    {
+        <textarea cols="5" rows="1" ID="ID"></textarea>
+        <textarea cols="20" rows="1" LastName="LastName"></textarea>
+        <textarea cols="20" rows="1" Name="Name"></textarea>
+        <textarea cols="20" rows="1" PhoneNumber="PhoneNumber"></textarea>
+        <textarea cols="20" rows="1" Email="Email"></textarea>
+        <button type="submit">Редактировать</button>
+    }
     <img style="position: absolute;
 width: 1380px;
 height: 25px;
