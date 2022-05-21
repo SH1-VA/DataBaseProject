@@ -23,7 +23,7 @@ namespace DataBase.Controllers
 
         [HttpPut]
         [Route("students")]
-        public Task Create([FromBody] CreateStudentRequest request) => _manager.Create(request.Name, request.LastName, request.Email, request.PhoneNumber, request.SubGroup, request.Number/*, request.GroupId, request.Group*/);
+        public Task Create([FromBody] CreateStudentRequest request) => _manager.Create(request.Name, request.LastName, request.Email, request.PhoneNumber, request.SubGroup/*, request.Number, request.GroupId, request.Group*/);
         //string name, string lastname, string email, string phonenumber, bool subgroup, int number, int groupid, Group group
 
         [HttpDelete]

@@ -7,9 +7,9 @@
         {
             _context = context;
         }
-        public async Task Create(string name, string lastname, string email, string phonenumber, bool subgroup, int number/*, int groupid, Group group*/)
+        public async Task Create(string name, string lastname, string email, string phonenumber, bool subgroup/*, int number, int groupid, Group group*/)
         {
-            var student = new Student { Name = name, LastName = lastname, Email = email, PhoneNumber = phonenumber, Subgroup = subgroup, Number = number/*, GroupId = groupid, Group = group */};
+            var student = new Student { Name = name, LastName = lastname, Email = email, PhoneNumber = phonenumber, Subgroup = subgroup/*, Number = number, GroupId = groupid, Group = group */};
             _context.Students.Add(student);
             await _context.SaveChangesAsync();
         }

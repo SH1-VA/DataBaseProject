@@ -5,7 +5,7 @@
 	<table>
 		<tr>
 			<th>
-				Номер
+				ID
 			</th>
 			<th>
 				Фамилия
@@ -20,10 +20,11 @@
 		@foreach(var student in Model)
 		{
 			<tr>
-				<td>@student.Number</td>
+				<td>@student.Id</td>
 				<td>@student.LastName</td>
 				<td>@student.Name</td>		
 				<td>@student.PhoneNumber</td>
+				<td>@student.Email</td>
 			</tr>
 		}
 	</table>

@@ -1,23 +1,23 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\Admin\\Documents\\GitHub\\DataBaseProject\\DataBaseStorage\\DataBaseStorage.csproj": {}
+    "C:\\Users\\User\\Source\\Repos\\DataBaseProject\\DataBaseStorage\\DataBaseStorage.csproj": {}
   },
   "projects": {
-    "C:\\Users\\Admin\\Documents\\GitHub\\DataBaseProject\\DataBaseStorage\\DataBaseStorage.csproj": {
+    "C:\\Users\\User\\Source\\Repos\\DataBaseProject\\DataBaseStorage\\DataBaseStorage.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\Admin\\Documents\\GitHub\\DataBaseProject\\DataBaseStorage\\DataBaseStorage.csproj",
+        "projectUniqueName": "C:\\Users\\User\\Source\\Repos\\DataBaseProject\\DataBaseStorage\\DataBaseStorage.csproj",
         "projectName": "DataBaseStorage",
-        "projectPath": "C:\\Users\\Admin\\Documents\\GitHub\\DataBaseProject\\DataBaseStorage\\DataBaseStorage.csproj",
-        "packagesPath": "C:\\Users\\Admin\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\Admin\\Documents\\GitHub\\DataBaseProject\\DataBaseStorage\\obj\\",
+        "projectPath": "C:\\Users\\User\\Source\\Repos\\DataBaseProject\\DataBaseStorage\\DataBaseStorage.csproj",
+        "packagesPath": "C:\\Users\\User\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\User\\Source\\Repos\\DataBaseProject\\DataBaseStorage\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
         ],
         "configFilePaths": [
-          "C:\\Users\\Admin\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\User\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
