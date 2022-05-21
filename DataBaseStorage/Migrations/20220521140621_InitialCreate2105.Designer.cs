@@ -11,8 +11,8 @@ using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 namespace DataBaseStorage.Migrations
 {
     [DbContext(typeof(UniversityContext))]
-    [Migration("20220521124149_NormView")]
-    partial class NormView
+    [Migration("20220521140621_InitialCreate2105")]
+    partial class InitialCreate2105
     {
         protected override void BuildTargetModel(ModelBuilder modelBuilder)
         {

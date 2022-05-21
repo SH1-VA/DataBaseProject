@@ -2,6 +2,7 @@
 {
     public class Speciality
     {
+        [Key]
         public int Id { get; set; }                            //Id для работы
         public string Name { get; set; }                        //Название специальности
         public string Code { get; set; }                        //Код специальности
