@@ -59,6 +59,13 @@ font-size: 32px;line-height: 39px;">СПИСОК ГРУПП</h2>
 			</tr>
 		}
 	</table>
+	<div>
+        @using (Html.BeginForm("название метода", "название контроллера", FormMethod.Post))
+		{
+			<textarea name="NameGroup" id="NameGroup"></textarea>
+			<button type="submit">добавить</button>
+		}
+	</div>
 	<img style="position: absolute;
 width: 1380px;
 height: 25px;
