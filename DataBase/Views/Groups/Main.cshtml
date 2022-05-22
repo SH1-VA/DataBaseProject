@@ -1,40 +1,57 @@
 ﻿@model IList<DataBase.Storage.Entity.Group>
 
-	<img style="position: absolute; width: 235px; height: 150px; left: 28px; top: 15px;" 
+	 <img style="position: absolute; width: 18%; height: 23%; left: 1%; top: 3%;" 
 		 src="~/Pictures/эмблема.png">
-	<h1 style="position: absolute;width: 688px;height: 102px;left: 270px;top: 40px;
+    <h1 style="position: absolute;width: 51%;height: 15%;left: 20%;top: 7%;
 font-family: 'Inter';font-style: normal;font-weight: 400;
-font-size: 36px;line-height: 39px;color: #2A3381;">Автоматизированное рабочее место
-<br> ФГБОУ ВО «МГТУ «СТАНКИН»</h1>
-	<form onclick="~/Specialitys/Specialitys.cshtml">
-		<button style="position: absolute;display: inline-block;background: #4169E1; color: white;
-				padding: 3rem, 1.5rem; text-decoration: none; 
-				border-radius: 3px;top: 145px; left: 270px;">Студенты</button></form>
-	<form onclick="~/Specialitys/Specialitys.cshtml">
-		<button style="position: absolute;display: inline-block;background: #4169E1; color: white;
-				padding: 3rem, 1.5rem; text-decoration: none; 
-				border-radius: 3px; top: 145px; left:360px;">Группы</button></form>
-	<form onclick="~/Specialitys/Specialitys.cshtml">
-		<button style="position: absolute;display: inline-block;background: #4169E1; color: white;
-				padding: 3rem, 1.5rem; text-decoration: none; 
-				border-radius: 3px; top: 145px; left:437px;">Дисциплины</button></form>
-	<form onclick="~/Specialitys/Specialitys.cshtml">
-		<button style="position: absolute;display: inline-block;background: #4169E1; color: white;
-				padding: 3rem, 1.5rem; text-decoration: none; 
-				border-radius: 3px; top: 145px; left:552px;">Кафедры</button></form>
-	<form onclick="~/Specialitys/Specialitys.cshtml">
-		<button style="position: absolute;display: inline-block;background: #4169E1; color: white;
-				padding: 3rem, 1.5rem; text-decoration: none; 
-				border-radius: 3px; top: 145px; left: 639px;">Специальности</button></form>
-	<form onclick="~/Specialitys/Specialitys.cshtml">
-		<button style="position: absolute;display: inline-block;background: #4169E1; color: white;
-				padding: 3rem, 1.5rem; text-decoration: none; 
-				border-radius: 3px; top: 145px; left:772px;">Преподаватели</button></form>
-	<img style="position: absolute;
-width: 1380px;
-height: 25px;
-left: 0px;
-top: 190px;" src="~/Pictures/линии.jpg">
+font-size: 230%;line-height: 115%;color: #2A3381;">
+        Автоматизированное рабочее место
+        <br> ФГБОУ ВО «МГТУ «СТАНКИН»
+    </h1>
+    <form onclick="~/Specialitys/Specialitys.cshtml">
+        <button style="position: absolute;display: inline-block;background: #4169E1; color: white;
+				padding: 3rem, 1.5rem; text-decoration: none;
+				border-radius: 7%;top: 23%; left: 20%;">
+            Студенты
+        </button>
+    </form>
+    <form onclick="https://localhost:7009/Students/main">
+        <button style="position: absolute;display: inline-block;background: #4169E1; color: white;
+				padding: 3rem, 1.5rem; text-decoration: none;
+				border-radius: 7%;top: 23%; left: 27%;">
+            Группы
+        </button>
+    </form>
+    <form onclick="https://localhost:7009/Group/main">
+        <button style="position: absolute;display: inline-block;background: #4169E1; color: white;
+				padding: 3rem, 1.5rem; text-decoration: none;
+				border-radius: 7%;top: 23%; left: 33%;">
+            Дисциплины
+        </button>
+    </form>
+    <form onclick="~/Specialitys/Specialitys.cshtml">
+        <button style="position: absolute;display: inline-block;background: #4169E1; color: white;
+				padding: 3rem, 1.5rem; text-decoration: none;
+				border-radius: 7%;top: 23%; left: 42%;">
+            Кафедры
+        </button>
+    </form>
+    <form onclick="~/Specialitys/Specialitys.cshtml">
+        <button style="position: absolute;display: inline-block;background: #4169E1; color: white;
+				padding: 3rem, 1.5rem; text-decoration: none;
+				border-radius: 7%;top: 23%; left: 49%;">
+            Специальности
+        </button>
+    </form>
+    <form onclick="~/Specialitys/Specialitys.cshtml">
+        <button style="position: absolute;display: inline-block;background: #4169E1; color: white;
+				padding: 3rem, 1.5rem; text-decoration: none;
+				border-radius: 7%;top: 23%; left: 60%;">
+            Преподаватели
+        </button>
+    </form>
+    <img style="position: absolute;width: 100%;height: 4%;left: 0%;top: 29%;"
+         src="~/Pictures/линии.jpg">
 	<h2 style="position: absolute;width: 688px;height: 102px;left: 117px;top: 220px;
 font-family: 'Inter';font-style: normal;font-weight: 400;
 font-size: 32px;line-height: 39px;">СПИСОК ГРУПП</h2>

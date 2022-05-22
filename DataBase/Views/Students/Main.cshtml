@@ -1,63 +1,60 @@
 ﻿@model IList<DataBase.Storage.Entity.Student>
 
-    <img style="position: absolute; width: 235px; height: 150px; left: 28px; top: 15px;"
-         src="~/Pictures/эмблема.png">
-    <h1 style="position: absolute;width: 688px;height: 102px;left: 270px;top: 40px;
+    <img style="position: absolute; width: 18%; height: 19%; left: 1%; top: 2%;" 
+		 src="~/Pictures/эмблема.png">
+    <h1 style="position: absolute;width: 51%;height: 15%;left: 20%;top: 6%;
 font-family: 'Inter';font-style: normal;font-weight: 400;
-font-size: 36px;line-height: 39px;color: #2A3381;">
+font-size: 230%;line-height: 115%;color: #2A3381;">
         Автоматизированное рабочее место
         <br> ФГБОУ ВО «МГТУ «СТАНКИН»
     </h1>
     <form onclick="~/Specialitys/Specialitys.cshtml">
-        <button style="position: absolute;display: inline-block;background: #4169E1; color: white;
+        <button style="position: absolute;display: inline-block;background: #2d5f84; color: white;
 				padding: 3rem, 1.5rem; text-decoration: none;
-				border-radius: 3px;top: 145px; left: 270px;">
+				border-radius: 7%;top: 19%; left: 20%;">
             Студенты
         </button>
     </form>
     <form onclick="https://localhost:7009/Students/main">
-        <button style="position: absolute;display: inline-block;background: #4169E1; color: white;
+        <button style="position: absolute;display: inline-block;background: #2d5f84; color: white;
 				padding: 3rem, 1.5rem; text-decoration: none;
-				border-radius: 3px; top: 145px; left:360px;">
+				border-radius: 7%;top: 19%; left: 27%;">
             Группы
         </button>
     </form>
     <form onclick="https://localhost:7009/Group/main">
-        <button style="position: absolute;display: inline-block;background: #4169E1; color: white;
+        <button style="position: absolute;display: inline-block;background: #2d5f84; color: white;
 				padding: 3rem, 1.5rem; text-decoration: none;
-				border-radius: 3px; top: 145px; left:437px;">
+				border-radius: 7%;top: 19%; left: 33%;">
             Дисциплины
         </button>
     </form>
     <form onclick="~/Specialitys/Specialitys.cshtml">
-        <button style="position: absolute;display: inline-block;background: #4169E1; color: white;
+        <button style="position: absolute;display: inline-block;background: #2d5f84; color: white;
 				padding: 3rem, 1.5rem; text-decoration: none;
-				border-radius: 3px; top: 145px; left:552px;">
+				border-radius: 7%;top: 19%; left: 42%;">
             Кафедры
         </button>
     </form>
     <form onclick="~/Specialitys/Specialitys.cshtml">
-        <button style="position: absolute;display: inline-block;background: #4169E1; color: white;
+        <button style="position: absolute;display: inline-block;background: #2d5f84; color: white;
 				padding: 3rem, 1.5rem; text-decoration: none;
-				border-radius: 3px; top: 145px; left: 639px;">
+				border-radius: 7%;top: 19%; left: 49%;">
             Специальности
         </button>
     </form>
     <form onclick="~/Specialitys/Specialitys.cshtml">
-        <button style="position: absolute;display: inline-block;background: #4169E1; color: white;
+        <button style="position: absolute;display: inline-block;background: #2d5f84; color: white;
 				padding: 3rem, 1.5rem; text-decoration: none;
-				border-radius: 3px; top: 145px; left:772px;">
+				border-radius: 7%;top: 19%; left: 60%;">
             Преподаватели
         </button>
     </form>
-    <img style="position: absolute;width: 1380px;height: 25px;left: 0px;top: 190px;"
+    <img style="position: absolute;width: 100%;height: 3%;left: 0%;top: 24%;"
          src="~/Pictures/линии.jpg">
-    <h2 style="position: absolute;width: 688px;height: 102px;left: 117px;top: 220px;
-font-family: 'Inter';font-style: normal;font-weight: 400;
-font-size: 32px;line-height: 39px;">
-        СПИСОК СТУДЕНТОВ </h2>
 
-    <table border="1" cellpadding="10" cellspacing="10" style="margin-top: 245px; border: 1px solid black">
+    <table border="1" cellpadding="10" cellspacing="10" style="margin-top: 18%; border: 1% solid black">
+        <caption align="top" style="color: black;font-size: 32px;line-height: 39px;"> Список студентов</caption>
         <tr>
             <th border="1" style="border: 1px solid black">
                 ID
@@ -88,29 +85,29 @@ font-size: 32px;line-height: 39px;">
     </table>
      @using(Html.BeginForm("название метода", "название контроллера", FormMethod.Post))
     {
-        <textarea cols="20" rows="1" LastName="LastName"></textarea>
-        <textarea cols="20" rows="1" Name="Name"></textarea>
-        <textarea cols="20" rows="1" PhoneNumber="PhoneNumber"></textarea>
-        <textarea cols="20" rows="1" Email="Email"></textarea>
+        <textarea placeholder="Фамилия" style="margin-top: 5%;" cols="15" rows="1" LastName="LastName"></textarea>
+        <textarea placeholder="Имя" cols="25" rows="1" Name="Name"></textarea>
+        <textarea placeholder="Телефон" cols="15" rows="1" PhoneNumber="PhoneNumber"></textarea>
+        <textarea placeholder="Эл. почта" cols="15" rows="1" Email="Email"></textarea>
         <button type="submit">Добавить</button>
     }
     <br>
     @using(Html.BeginForm("Delete", "Students", FormMethod.Post))
     {
-        <textarea cols="5" rows="1" name="id"></textarea>
+        <textarea placeholder="Введите ID" cols="10" rows="1" name="id"></textarea>
         <button type="submit">Удалить</button>
     }
     <br>
     @using(Html.BeginForm("название метода", "название контроллера", FormMethod.Post))
     {
-        <textarea cols="5" rows="1" ID="ID"></textarea>
-        <textarea cols="20" rows="1" LastName="LastName"></textarea>
-        <textarea cols="20" rows="1" Name="Name"></textarea>
-        <textarea cols="20" rows="1" PhoneNumber="PhoneNumber"></textarea>
-        <textarea cols="20" rows="1" Email="Email"></textarea>
+        <textarea placeholder="ID" cols="5" rows="1" ID="ID"></textarea>
+        <textarea placeholder="Фамилия" cols="20" rows="1" LastName="LastName"></textarea>
+        <textarea placeholder="Имя" cols="20" rows="1" Name="Name"></textarea>
+        <textarea placeholder="Телефон" cols="20" rows="1" PhoneNumber="PhoneNumber"></textarea>
+        <textarea placeholder="Эл. почта" cols="20" rows="1" Email="Email"></textarea>
         <button type="submit">Редактировать</button>
     }
     <img style="position: absolute;
-width: 1380px;
-height: 25px;
-left: 0px; margin-top: 45px" src="~/Pictures/линии.jpg">
+width: 100%;
+height: 3%;
+left: 0px; margin-top: 3%" src="~/Pictures/линии.jpg">
