@@ -95,9 +95,9 @@ font-size: 32px;line-height: 39px;">
         <button type="submit">Добавить</button>
     }
     <br>
-    @using(Html.BeginForm("название метода", "название контроллера", FormMethod.Post))
+    @using(Html.BeginForm("Delete", "Students", FormMethod.Post))
     {
-        <textarea cols="5" rows="1" ID="ID"></textarea>
+        <textarea cols="5" rows="1" name="id"></textarea>
         <button type="submit">Удалить</button>
     }
     <br>

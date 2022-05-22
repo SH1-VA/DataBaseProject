@@ -16,10 +16,10 @@
 
         public async Task Delete(int id)
         {
-            var student = _context.Groups.FirstOrDefault(s => s.Id == id);
+            var student = _context.Students.FirstOrDefault(s => s.Id == id);
             if (student != null)
             {
-                _context.Groups.Remove(student);
+                _context.Students.Remove(student);
                 await _context.SaveChangesAsync();
             }
         }

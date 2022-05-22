@@ -2,9 +2,10 @@
 
 namespace DataBase.Controllers
 {
-    public class StudentsController: Controller
+    public class StudentsController : Controller
     {
         private readonly IStudentManager _manager;
+
         public StudentsController(IStudentManager manager)
         {
             _manager = manager;
@@ -26,8 +27,12 @@ namespace DataBase.Controllers
         public Task Create([FromBody] CreateStudentRequest request) => _manager.Create(request.Name, request.LastName, request.Email, request.PhoneNumber, request.SubGroup/*, request.Number, request.GroupId, request.Group*/);
         //string name, string lastname, string email, string phonenumber, bool subgroup, int number, int groupid, Group group
 
-        [HttpDelete]
-        [Route("students/{id:int}")]
-        public Task Delete(int id) => _manager.Delete(id);
+        [HttpPost]
+        // [Route("students/{id:int}")]
+        public IActionResult Delete(int id)
+        {
+            _manager.Delete(id);
+            return RedirectToAction(nameof(Main));
+        }
     }
 }
