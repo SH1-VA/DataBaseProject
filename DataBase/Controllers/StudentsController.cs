@@ -22,9 +22,14 @@ namespace DataBase.Controllers
         [Route("students")]
         public Task<IList<Student>> GetAll() => _manager.GetAll();
 
-        [HttpPut]
-        [Route("students")]
-        public Task Create([FromBody] CreateStudentRequest request) => _manager.Create(request.Name, request.LastName, request.Email, request.PhoneNumber, request.SubGroup/*, request.Number, request.GroupId, request.Group*/);
+        [HttpPost]
+        //[Route("students")]
+        //public Task Create([FromBody] CreateStudentRequest request) => _manager.Create(request.Name, request.LastName, request.Email, request.PhoneNumber, request.SubGroup/*, request.Number, request.GroupId, request.Group*/);
+        public IActionResult Create(string name, string lastname, string email, string phonenumber, bool subgroup, string groupidstring)
+        {
+            _manager.Create(name, lastname, email, phonenumber, subgroup, groupidstring);
+            return RedirectToAction(nameof(Main));
+        }
         //string name, string lastname, string email, string phonenumber, bool subgroup, int number, int groupid, Group group
 
         [HttpPost]

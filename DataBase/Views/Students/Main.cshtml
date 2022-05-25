@@ -83,12 +83,14 @@ font-size: 230%;line-height: 115%;color: #2A3381;">
 
     </tr>}
     </table>
-     @using(Html.BeginForm("название метода", "название контроллера", FormMethod.Post))
+     @using(Html.BeginForm("Create", "Students", FormMethod.Post))
     {
-        <textarea placeholder="Фамилия" style="margin-top: 5%;" cols="15" rows="1" LastName="LastName"></textarea>
+        <textarea placeholder="Фамилия" style="margin-top: 5%;" cols="15" rows="1" Name="LastName"></textarea>
         <textarea placeholder="Имя" cols="25" rows="1" Name="Name"></textarea>
-        <textarea placeholder="Телефон" cols="15" rows="1" PhoneNumber="PhoneNumber"></textarea>
-        <textarea placeholder="Эл. почта" cols="15" rows="1" Email="Email"></textarea>
+        <textarea placeholder="Телефон" cols="15" rows="1" Name="PhoneNumber"></textarea>
+        <textarea placeholder="Эл. почта" cols="15" rows="1" Name="Email"></textarea>
+        <textarea placeholder="Подгруппа" cols="15" rows="1" Name="Subgroup"></textarea>
+        <textarea placeholder="Группа" cols="15" rows="1" Name="Groupidstring"></textarea>
         <button type="submit">Добавить</button>
     }
     <br>
