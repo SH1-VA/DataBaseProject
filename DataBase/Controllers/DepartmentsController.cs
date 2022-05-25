@@ -21,9 +21,14 @@ namespace DataBase.Controllers
         [Route("departments")]
         public Task<IList<Department>> GetAll() => _manager.GetAll();
 
-        [HttpPut]
-        [Route("departments")]
-        public Task Create([FromBody] CreateDepartmentRequest request) => _manager.Create(request.Name, request.Email, request.PhoneNumber, request.AudienceNumber);
+        [HttpPost]
+        //[Route("departments")]
+        //public Task Create([FromBody] CreateDepartmentRequest request) => _manager.Create(request.Name, request.Email, request.PhoneNumber, request.AudienceNumber);
+        public IActionResult Create(string name, string email, string phonenumber, string audiencenumberString)
+        {
+            _manager.Create(name, email, phonenumber, audiencenumberString);
+            return RedirectToAction(nameof(Main));
+        }
 
         [HttpDelete]
         [Route("departments/{id:int}")]

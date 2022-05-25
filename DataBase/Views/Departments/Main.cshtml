@@ -84,12 +84,12 @@ font-size: 230%;line-height: 115%;color: #2A3381;">
 		}
 	</table>
 	<div>
-        @using (Html.BeginForm("название метода", "название контроллера", FormMethod.Post))
+        @using (Html.BeginForm("Create", "Departments", FormMethod.Post))
 		{
 			<textarea placeholder="Название кафедры" cols="80" rows="1"name="Name" id="Name"></textarea>
 			<textarea placeholder="Эл. почта" cols="20" rows="1"name="Email" id="Email"></textarea>
 			<textarea placeholder="Телефон" cols="12" rows="1" name="PhoneNumber" id="PhoneNumber"></textarea>
-			<textarea placeholder="Аудитория" cols="10" rows="1"name="AudienceNumber" id="AudienceNumber"></textarea>
+			<textarea placeholder="Аудитория" cols="10" rows="1"name="AudienceNumber" id="audiencenumberString"></textarea>
 			<button type="submit">добавить</button>
 		}
 		<br>
