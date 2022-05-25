@@ -10,7 +10,7 @@
         public async Task Create(string name, string lastname, string email, string phonenumber, bool subgroup, string groupidstring/*, int number, int groupid, Group group*/)
         {
             int groupid = System.Convert.ToInt32(groupidstring);
-            var student = new Student {Id = 3, Name = name, LastName = lastname, Email = email, PhoneNumber = phonenumber, Subgroup = subgroup, GroupId = groupid/*, Number = number, GroupId = groupid*/};
+            var student = new Student { Name = name, LastName = lastname, Email = email, PhoneNumber = phonenumber, Subgroup = subgroup, GroupId = groupid/*, Number = number, GroupId = groupid*/};
             _context.Students.Add(student);
             await _context.SaveChangesAsync();
         }

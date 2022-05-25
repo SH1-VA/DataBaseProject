@@ -83,7 +83,7 @@ font-size: 230%;line-height: 115%;color: #2A3381;">
 
     </tr>}
     </table>
-     @using(Html.BeginForm("Create", "Students", FormMethod.Post))
+     @using(Html.BeginForm("Create", "Students", FormMethod.Get))
     {
         <textarea placeholder="Фамилия" style="margin-top: 5%;" cols="15" rows="1" Name="LastName"></textarea>
         <textarea placeholder="Имя" cols="25" rows="1" Name="Name"></textarea>

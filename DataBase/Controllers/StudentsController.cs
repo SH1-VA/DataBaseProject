@@ -22,7 +22,7 @@ namespace DataBase.Controllers
         [Route("students")]
         public Task<IList<Student>> GetAll() => _manager.GetAll();
 
-        [HttpPost]
+        [HttpGet]
         //[Route("students")]
         //public Task Create([FromBody] CreateStudentRequest request) => _manager.Create(request.Name, request.LastName, request.Email, request.PhoneNumber, request.SubGroup/*, request.Number, request.GroupId, request.Group*/);
         public IActionResult Create(string name, string lastname, string email, string phonenumber, bool subgroup, string groupidstring)

@@ -21,7 +21,7 @@ namespace DataBase.Controllers
         [Route("departments")]
         public Task<IList<Department>> GetAll() => _manager.GetAll();
 
-        [HttpPost]
+        [HttpGet]
         //[Route("departments")]
         //public Task Create([FromBody] CreateDepartmentRequest request) => _manager.Create(request.Name, request.Email, request.PhoneNumber, request.AudienceNumber);
         public IActionResult Create(string name, string email, string phonenumber, string audiencenumberString)
@@ -30,8 +30,13 @@ namespace DataBase.Controllers
             return RedirectToAction(nameof(Main));
         }
 
-        [HttpDelete]
-        [Route("departments/{id:int}")]
-        public Task Delete(int id) => _manager.Delete(id);
+        [HttpPost]
+        //[Route("departments/{id:int}")]
+        //public Task Delete(int id) => _manager.Delete(id);
+        public IActionResult Delete(int id)
+        {
+            _manager.Delete(id);
+            return RedirectToAction(nameof(Main));
+        }
     }
 }
