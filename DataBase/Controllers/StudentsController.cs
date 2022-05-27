@@ -11,11 +11,17 @@ namespace DataBase.Controllers
             _manager = manager;
         }
 
-        public async Task<IActionResult> Main()
+        public async Task<IActionResult> Main(List<Student>? anyStudents)
         {
-            var students = await _manager.GetAll();
-
-            return View(students);
+            if (anyStudents != null)
+            {
+                return View(anyStudents);
+            }
+            else
+            {
+                var students = await _manager.GetAll();
+                return View(students);
+            }
         }
 
         [HttpGet]
@@ -23,7 +29,7 @@ namespace DataBase.Controllers
         public Task<IList<Student>> GetAll() => _manager.GetAll();
 
         [HttpGet]
-        public async Task<IActionResult> Search(string LastName)
+        public async void Search(string LastName)
         {
             var sameStudent = await _manager.GetAll();
 
@@ -35,12 +41,11 @@ namespace DataBase.Controllers
                     students.Add(oneStudent);
                 }
             }
-            return View(students);
+            await Main(students);
         }
 
-      
-       
 
+        [HttpGet]
         //[Route("students")]
         //public Task Create([FromBody] CreateStudentRequest request) => _manager.Create(request.Name, request.LastName, request.Email, request.PhoneNumber, request.SubGroup/*, request.Number, request.GroupId, request.Group*/);
         public IActionResult Create(CreateStudentRequest model)
