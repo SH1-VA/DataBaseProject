@@ -1,0 +1,11 @@
+{
+  "profiles": {
+    "DataBaseStorage": {
+      "commandName": "Project"
+    },
+    "Профиль 1": {
+      "commandName": "Executable",
+      "executablePath": "C:\\Users\\Admin\\Documents\\GitHub\\DataBaseProject\\DataBase\\DataBase.sln"
+    }
+  }
+}

@@ -1,33 +1,120 @@
 ﻿@model IList<DataBase.Storage.Entity.Teacher>
 
-	<h1>Преподаватели:</h1>
-
-	<table>
-		<tr>
-			<th>
-				Фамилия
-			</th>
-			<th>
-				Имя
-			</th>
-			<th>
-				Номер телефона
-			</th>
-			<th>
-				Почта
-			</th>
-			<th>
-				Рабочие часы
-			</th>
-		</tr>
-		@foreach(var teacher in Model)
+	 <img style="position: absolute; width: 18%; height: 23%; left: 1%; top: 2%;" 
+		 src="~/Pictures/эмблема.png">
+    <h1 style="position: absolute;width: 51%;height: 15%;left: 20%;top: 7%;
+font-family: 'Inter';font-style: normal;font-weight: 400;
+font-size: 230%;line-height: 115%;color: #2A3381;">
+        Автоматизированное рабочее место
+        <br> ФГБОУ ВО «МГТУ «СТАНКИН»
+    </h1>
+    <form action="https://localhost:7009/students/main">
+        <button style="position: absolute;display: inline-block;background: #2d5f84; color: white;
+				padding: 3rem, 1.5rem; text-decoration: none;
+				border-radius: 7%;top: 22%; left: 20%;">
+            Студенты
+        </button>
+    </form>
+    <form action="https://localhost:7009/groups/main">
+        <button style="position: absolute;display: inline-block;background: #2d5f84; color: white;
+				padding: 3rem, 1.5rem; text-decoration: none;
+				border-radius: 7%;top: 22%; left: 27%;">
+            Группы
+        </button>
+    </form>
+    <form action="https://localhost:7009/disciplines/main">
+        <button style="position: absolute;display: inline-block;background: #2d5f84; color: white;
+				padding: 3rem, 1.5rem; text-decoration: none;
+				border-radius: 7%;top: 22%; left: 33%;">
+            Дисциплины
+        </button>
+    </form>
+    <form action="https://localhost:7009/departments/main">
+        <button style="position: absolute;display: inline-block;background: #2d5f84; color: white;
+				padding: 3rem, 1.5rem; text-decoration: none;
+				border-radius: 7%;top: 22%; left: 42%;">
+            Кафедры
+        </button>
+    </form>
+    <form action="https://localhost:7009/specialitys/main">
+        <button style="position: absolute;display: inline-block;background: #2d5f84; color: white;
+				padding: 3rem, 1.5rem; text-decoration: none;
+				border-radius: 7%;top: 22%; left: 49%;">
+            Специальности
+        </button>
+    </form>
+    <form action="https://localhost:7009/teachers/main">
+        <button style="position: absolute;display: inline-block;background: #2d5f84; color: white;
+				padding: 3rem, 1.5rem; text-decoration: none;
+				border-radius: 7%;top: 22%; left: 60%;">
+            Преподаватели
+        </button>
+    </form>
+    <form style="position: absolute; top: 22%; left: 80%;">
+        <input type="text" placeholder="Искать здесь...">
+        <button type="submit">🔍</button>
+    </form>
+    <img style="position: absolute;width: 100%;height: 3%;left: 0%;top: 28%;"
+         src="~/Pictures/линии.jpg">
+	<div style="position: absolute; top: 33%;">
+        @using (Html.BeginForm("", "", FormMethod.Get))
 		{
-			<tr>
-				<td>@teacher.LastName</td>
-				<td>@teacher.Name</td>		
-				<td>@teacher.PhoneNumber</td>
-				<td>@teacher.Email</td>
-				<td>@teacher.Hours</td>
-			</tr>
+			<textarea placeholder="Фамилия" cols="15" rows="1" Name="LastName"></textarea>
+			<textarea placeholder="Имя" cols="25" rows="1" Name="Name"></textarea>
+			<textarea placeholder="Телефон" cols="15" rows="1" Name="PhoneNumber"></textarea>
+			<textarea placeholder="Эл. почта" cols="15" rows="1" Name="Email"></textarea>
+			<textarea placeholder="Количество часов" cols="15" rows="1" Name="Subgroup"></textarea>
+			<button style="position: absolute; top: -1%; left: 93%;" type="submit">добавить</button>
 		}
-	</table>
+		@using(Html.BeginForm("", "", FormMethod.Post))
+		{
+        <textarea placeholder="Введите ID" cols="10" rows="1" name="id"></textarea>
+        <button style="position: absolute; top: 32%; left: 13%;" type="submit">удалить</button>
+        }
+		@using(Html.BeginForm("название метода", "название контроллера", FormMethod.Post))
+		{
+            <textarea placeholder="ID" cols="5" rows="1" ID="ID"></textarea>
+			<textarea placeholder="Фамилия" cols="15" rows="1" Name="LastName"></textarea>
+			<textarea placeholder="Имя" cols="25" rows="1" Name="Name"></textarea>
+			<textarea placeholder="Телефон" cols="15" rows="1" Name="PhoneNumber"></textarea>
+			<textarea placeholder="Эл. почта" cols="15" rows="1" Name="Email"></textarea>
+			<textarea placeholder="Количество часов" cols="15" rows="1" Name="Subgroup"></textarea>
+            <button style="position: absolute;left: 101%"type="submit">редактировать</button>
+        }
+	</div>
+
+	<div style="position: absolute; top: 48%;">
+     <table border="1" cellpadding="10" cellspacing="10" style="border: 1% solid black">
+		<caption align="top" style="color: black;font-size: 32px;line-height: 39px;"> Список преподавателей</caption>
+        <tr>
+            <th border="1" style="border: 1px solid black">
+                ID
+            </th>
+            <th border="1" style="border: 1px solid black">
+                ФАМИЛИМЯ
+            </th>
+            <th border="1" style="border: 1px solid black">
+                ИМЯ
+            </th>
+            <th border="1" style="border: 1px solid black">
+                НОМЕР ТЕЛЕФОНА
+            </th>
+            <th border="1" style="border: 1px solid black">
+                ЭЛ. ПОЧТА
+            </th>
+            <th border="1" style="border: 1px solid black">
+                КОЛ-ВО ЧАСОВ
+            </th>
+        </tr>
+        @foreach (var teacher in Model)
+        {
+    <tr>
+        <td border="1" style="border: 1px solid black">@teacher.Id</td>
+        <td border="1" style="border: 1px solid black">@teacher.LastName</td>
+        <td border="1" style="border: 1px solid black">@teacher.Name</td>
+        <td border="1" style="border: 1px solid black">@teacher.PhoneNumber</td>
+        <td border="1" style="border: 1px solid black">@teacher.Email</td>
+        <td border="1" style="border: 1px solid black">@teacher.Hours</td>
+    </tr>}
+    </table>
+  </div> 
