@@ -65,7 +65,7 @@ font-size: 230%;line-height: 115%;color: #2A3381;">
 			<textarea placeholder="Аудитория" cols="10" rows="1"name="audiencenumberString" id="audiencenumberString"></textarea>
 			<button style="position: absolute; top: -1%; left: 95%;" type="submit">добавить</button>
 		}
-		@using(Html.BeginForm("", "", FormMethod.Post))
+		@using(Html.BeginForm("Delete", "Groups", FormMethod.Post))
 		{
         <textarea placeholder="Введите ID" cols="10" rows="1" name="id"></textarea>
         <button style="position: absolute; top: 32%; left: 10%;" type="submit">удалить</button>

@@ -21,12 +21,18 @@ namespace DataBase.Controllers
         [Route("teachers")]
         public Task<IList<Teacher>> GetAll() => _manager.GetAll();
 
-        [HttpPut]
-        [Route("teachers")]
-        public Task Create([FromBody] CreateTeacherRequest request) => _manager.Create(request.Name, request.LastName, request.Email, request.PhoneNumber, request.Hours);
+        [HttpGet]
+        public IActionResult Create(CreateTeacherRequest model)
+        {
+            _manager.Create(model.Name, model.LastName, model.Email, model.PhoneNumber, model.Hours);
+            return RedirectToAction(nameof(Main));
+        }
 
-        [HttpDelete]
-        [Route("teachers/{id:int}")]
-        public Task Delete(int id) => _manager.Delete(id);
+        [HttpPost]
+        public IActionResult Delete(int id)
+        {
+            _manager.Delete(id);
+            return RedirectToAction(nameof(Main));
+        }
     }
 }

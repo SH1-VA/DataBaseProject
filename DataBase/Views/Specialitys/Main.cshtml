@@ -57,13 +57,13 @@ font-size: 230%;line-height: 115%;color: #2A3381;">
     <img style="position: absolute;width: 100%;height: 3%;left: 0%;top: 28%;"
          src="~/Pictures/линии.jpg">
 	<div style="position: absolute; top: 33%;">
-        @using (Html.BeginForm("", "", FormMethod.Get))
+        @using (Html.BeginForm("Create", "Specialitys", FormMethod.Get))
 		{
 			<textarea placeholder="Код" cols="10" rows="1"name="Name" id="Name"></textarea>
-			<textarea placeholder="Название специальности" cols="80" rows="1"name="Email" id="Email"></textarea>
+			<textarea placeholder="Название специальности" cols="80" rows="1"name="Code" id="Email"></textarea>
 			<button style="position: absolute; top: -1%; left: 93%;" type="submit">добавить</button>
 		}
-		@using(Html.BeginForm("", "", FormMethod.Post))
+		@using(Html.BeginForm("Delete", "Specialitys", FormMethod.Post))
 		{
         <textarea placeholder="Введите ID" cols="10" rows="1" name="id"></textarea>
         <button style="position: absolute; top: 32%; left: 14%;" type="submit">удалить</button>

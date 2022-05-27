@@ -7,8 +7,9 @@
         {
             _context = context;
         }
-        public async Task Create(string name, string lastname, string email, string phonenumber, int hours)
+        public async Task Create(string name, string lastname, string email, string phonenumber, string hoursstring)
         {
+            var hours = System.Convert.ToInt32(hoursstring);
             var teacher = new Teacher { Name = name, LastName = lastname, Email = email, PhoneNumber = phonenumber, Hours = hours};
             _context.Teachers.Add(teacher);
             await _context.SaveChangesAsync();

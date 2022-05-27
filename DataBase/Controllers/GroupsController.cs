@@ -23,8 +23,12 @@
         [Route("groups")]
         public Task Create([FromBody] CreateGroupRequest request) => _manager.Create(request.Name, request.NumberOfStudents, request.Orientation);
 
-        [HttpDelete]
-        [Route("groups/{id:int}")]
-        public Task Delete(int id) => _manager.Delete(id);
+        [HttpPost]
+        // [Route("students/{id:int}")]
+        public IActionResult Delete(int id)
+        {
+            _manager.Delete(id);
+            return RedirectToAction(nameof(Main));
+        }
     }
 }

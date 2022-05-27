@@ -21,12 +21,21 @@ namespace DataBase.Controllers
         [Route("specialitys")]
         public Task<IList<Speciality>> GetAll() => _manager.GetAll();
 
-        [HttpPut]
-        [Route("specialitys")]
-        public Task Create([FromBody] CreateSpecialityRequest request) => _manager.Create(request.Name, request.Code, request.NumberOfStudents);
+        [HttpGet]
+        //[Route("students")]
+        //public Task Create([FromBody] CreateStudentRequest request) => _manager.Create(request.Name, request.LastName, request.Email, request.PhoneNumber, request.SubGroup/*, request.Number, request.GroupId, request.Group*/);
+        public IActionResult Create(CreateSpecialityRequest model)
+        {
+            _manager.Create(model.Name, model.Code, model.NumberOfStudents);
+            return RedirectToAction(nameof(Main));
+        }
 
-        [HttpDelete]
-        [Route("specialitys/{id:int}")]
-        public Task Delete(int id) => _manager.Delete(id);
+        [HttpPost]
+        // [Route("students/{id:int}")]
+        public IActionResult Delete(int id)
+        {
+            _manager.Delete(id);
+            return RedirectToAction(nameof(Main));
+        }
     }
 }

@@ -57,16 +57,16 @@ font-size: 230%;line-height: 115%;color: #2A3381;">
     <img style="position: absolute;width: 100%;height: 3%;left: 0%;top: 28%;"
          src="~/Pictures/линии.jpg">
 	<div style="position: absolute; top: 33%;">
-        @using (Html.BeginForm("", "", FormMethod.Get))
+        @using (Html.BeginForm("Create", "Teachers", FormMethod.Get))
 		{
 			<textarea placeholder="Фамилия" cols="15" rows="1" Name="LastName"></textarea>
 			<textarea placeholder="Имя" cols="25" rows="1" Name="Name"></textarea>
 			<textarea placeholder="Телефон" cols="15" rows="1" Name="PhoneNumber"></textarea>
 			<textarea placeholder="Эл. почта" cols="15" rows="1" Name="Email"></textarea>
-			<textarea placeholder="Количество часов" cols="15" rows="1" Name="Subgroup"></textarea>
+			<textarea placeholder="Количество часов" cols="15" rows="1" Name="Hours"></textarea>
 			<button style="position: absolute; top: -1%; left: 93%;" type="submit">добавить</button>
 		}
-		@using(Html.BeginForm("", "", FormMethod.Post))
+		@using(Html.BeginForm("Delete", "Teachers", FormMethod.Post))
 		{
         <textarea placeholder="Введите ID" cols="10" rows="1" name="id"></textarea>
         <button style="position: absolute; top: 32%; left: 13%;" type="submit">удалить</button>

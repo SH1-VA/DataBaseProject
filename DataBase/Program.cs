@@ -34,8 +34,34 @@ app.UseRouting();
 
 app.UseAuthorization();
 
-app.MapControllerRoute(
-    name: "default",
-    pattern: "{controller=Departments}/{action=Main}/{id?}");
+
+app.UseEndpoints(endpoints =>
+{
+    endpoints.MapControllerRoute(name: "Teachers",
+        pattern: "Teachers/main",
+        defaults: new { controller = "Teachers", action = "main" });
+
+    endpoints.MapControllerRoute(name: "Students",
+        pattern: "Students/main",
+        defaults: new { controller = "Students", action = "main" });
+
+    endpoints.MapControllerRoute(name: "Disciplines",
+        pattern: "Disciplines/main",
+        defaults: new { controller = "Disciplines", action = "main" });
+
+    endpoints.MapControllerRoute(name: "Groups",
+        pattern: "Groups/main",
+        defaults: new { controller = "Groups", action = "main" }); 
+
+    endpoints.MapControllerRoute(name: "Specialitys",
+        pattern: "Specialitys/main",
+        defaults: new { controller = "Specialitys", action = "main" });
+
+    endpoints.MapControllerRoute(name: "default",
+        pattern: "{controller=Departments}/{action=main}/{id?}");
+});
+//app.MapControllerRoute(
+//    name: "default",
+//    pattern: "{controller=Departments}/{action=Main}/{id?}");
 
 app.Run();
