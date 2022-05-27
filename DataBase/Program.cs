@@ -58,7 +58,7 @@ app.UseEndpoints(endpoints =>
         defaults: new { controller = "Specialitys", action = "main" });
 
     endpoints.MapControllerRoute(name: "default",
-        pattern: "{controller=Departments}/{action=main}/{id?}");
+        pattern: "{controller=Students}/{action=main}/{id?}");
 });
 //app.MapControllerRoute(
 //    name: "default",

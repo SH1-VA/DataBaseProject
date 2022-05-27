@@ -23,6 +23,24 @@ namespace DataBase.Controllers
         public Task<IList<Student>> GetAll() => _manager.GetAll();
 
         [HttpGet]
+        public async Task<IActionResult> Search(string LastName)
+        {
+            var sameStudent = await _manager.GetAll();
+
+            List<Student> students = new List<Student>();
+            foreach(var oneStudent in sameStudent)
+            {
+                if (oneStudent.LastName == LastName)
+                {
+                    students.Add(oneStudent);
+                }
+            }
+            return View(students);
+        }
+
+      
+       
+
         //[Route("students")]
         //public Task Create([FromBody] CreateStudentRequest request) => _manager.Create(request.Name, request.LastName, request.Email, request.PhoneNumber, request.SubGroup/*, request.Number, request.GroupId, request.Group*/);
         public IActionResult Create(CreateStudentRequest model)
