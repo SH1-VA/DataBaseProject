@@ -25,9 +25,9 @@ namespace DataBase.Controllers
         [HttpGet]
         //[Route("students")]
         //public Task Create([FromBody] CreateStudentRequest request) => _manager.Create(request.Name, request.LastName, request.Email, request.PhoneNumber, request.SubGroup/*, request.Number, request.GroupId, request.Group*/);
-        public IActionResult Create(string name, string lastname, string email, string phonenumber, bool subgroup, string groupidstring)
+        public IActionResult Create(CreateStudentRequest model)
         {
-            _manager.Create(name, lastname, email, phonenumber, subgroup, groupidstring);
+            _manager.Create(model.Name, model.LastName, model.Email, model.PhoneNumber, model.SubGroup, model.GroupIdString);
             return RedirectToAction(nameof(Main));
         }
         //string name, string lastname, string email, string phonenumber, bool subgroup, int number, int groupid, Group group
