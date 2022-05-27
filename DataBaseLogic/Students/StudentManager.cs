@@ -25,6 +25,21 @@
             }
         }
 
+        public List<Student> Search(string LastName)
+        {
+            var sameStudent = _context.Students;
+
+            List<Student> students = new List<Student>();
+            foreach (var oneStudent in sameStudent)
+            {
+                if (oneStudent.LastName == LastName)
+                {
+                    students.Add(oneStudent);
+                }
+            }
+            return students;
+        }
+
         public async Task<IList<Student>> GetAll() => await _context.Students.ToListAsync();
     }
 }

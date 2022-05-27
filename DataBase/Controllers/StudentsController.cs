@@ -11,9 +11,9 @@ namespace DataBase.Controllers
             _manager = manager;
         }
 
-        public async Task<IActionResult> Main(List<Student>? anyStudents)
+        public async Task<IActionResult> Main(List<Student> anyStudents)
         {
-            if (anyStudents != null)
+            if (anyStudents.Count != 0)
             {
                 return View(anyStudents);
             }
@@ -31,17 +31,8 @@ namespace DataBase.Controllers
         [HttpGet]
         public async void Search(string LastName)
         {
-            var sameStudent = await _manager.GetAll();
-
-            List<Student> students = new List<Student>();
-            foreach(var oneStudent in sameStudent)
-            {
-                if (oneStudent.LastName == LastName)
-                {
-                    students.Add(oneStudent);
-                }
-            }
-            await Main(students);
+            var students1 = _manager.Search(LastName);
+            await Main(students1);
         }
 
 
