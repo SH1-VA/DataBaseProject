@@ -68,18 +68,16 @@ font-size: 230%;line-height: 115%;color: #2A3381;">
         <textarea placeholder="Имя" cols="25" rows="1" Name="Name"></textarea>
         <textarea placeholder="Телефон" cols="15" rows="1" Name="PhoneNumber"></textarea>
         <textarea placeholder="Эл. почта" cols="15" rows="1" Name="Email"></textarea>
-        <textarea placeholder="Группа" cols="15" rows="1" Name="GroupIdString"></textarea>
-        <select name="Subgroup">
-            <option value="True">A</option>
-            <option value="False">B</option>
-        </select>
-
         <select name="Group" >
             @ViewBag.bag = "GroupNameList"
-            @foreach(var Group in ViewBag.bag)
+            @foreach (var Group in ViewBag.bag)
             {
                 <option>@Group</option>
             }
+        </select>
+        <select name="Subgroup">
+            <option value="True">A</option>
+            <option value="False">B</option>
         </select>
 
         <button style="position: absolute; top: -1%; left: 101%;" type="submit">добавить</button>

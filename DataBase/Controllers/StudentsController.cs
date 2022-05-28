@@ -14,7 +14,8 @@ namespace DataBase.Controllers
         public async Task<IActionResult> Main()
         {
                 var students = await _manager.GetAll();
-                return View(students);
+            ViewBag.bag = _manager.GroupNameList();
+            return View(students);
         }
 
         [HttpGet]
