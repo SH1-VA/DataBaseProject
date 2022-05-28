@@ -68,8 +68,13 @@ font-size: 230%;line-height: 115%;color: #2A3381;">
         <textarea placeholder="Имя" cols="25" rows="1" Name="Name"></textarea>
         <textarea placeholder="Телефон" cols="15" rows="1" Name="PhoneNumber"></textarea>
         <textarea placeholder="Эл. почта" cols="15" rows="1" Name="Email"></textarea>
+        <select name="Subgroup">
+            @foreach(var Subgroup in ViewBag.Student)
+            {
+                <option>@Subgroup</option>
+            }
+        </select>
         <textarea placeholder="Подгруппа" cols="15" rows="1" Name="Subgroup"></textarea>
-        <textarea placeholder="Группа" cols="15" rows="1" Name="Groupidstring"></textarea>
         <button style="position: absolute; top: -1%; left: 101%;" type="submit">добавить</button>
         }
         @using(Html.BeginForm("Delete", "Students", FormMethod.Post))
