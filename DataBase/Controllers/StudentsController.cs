@@ -22,12 +22,17 @@ namespace DataBase.Controllers
         public Task<IList<Student>> GetAll() => _manager.GetAll();
 
         [HttpGet]
+        public async Task<IActionResult> ViewSearch()
+        {
+            return View();
+        }
+
+        [HttpPost]
         public async Task<IActionResult> Search(string LastName)
         {
             var students1 = _manager.Search(LastName);
             return View(students1);
         }
-
 
         [HttpGet]
         //[Route("students")]

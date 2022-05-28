@@ -63,37 +63,3 @@ font-size: 230%;line-height: 115%;color: #2A3381;">
     <input type="text" name="LastName" placeholder="Искать по фамилии...">
     <button type="submit">🔍</button>
     </form>
-
-
- <div style="position: absolute; top: 48%;">
-     <table border="1" cellpadding="10" cellspacing="10" style="border: 1% solid black">
-		<caption align="top" style="color: black;font-size: 32px;line-height: 39px;"> Список студентов</caption>
-        <tr>
-            <th border="1" style="border: 1px solid black">
-                ID
-            </th>
-            <th border="1" style="border: 1px solid black">
-                ФАМИЛИМЯ
-            </th>
-            <th border="1" style="border: 1px solid black">
-                ИМЯ
-            </th>
-            <th border="1" style="border: 1px solid black">
-                НОМЕР ТЕЛЕФОНА
-            </th>
-            <th border="1" style="border: 1px solid black">
-                ЭЛ. ПОЧТА
-            </th>
-        </tr>
-        @foreach (var student in Model)
-        {
-    <tr>
-        <td border="1" style="border: 1px solid black">@student.Id</td>
-        <td border="1" style="border: 1px solid black">@student.LastName</td>
-        <td border="1" style="border: 1px solid black">@student.Name</td>
-        <td border="1" style="border: 1px solid black">@student.PhoneNumber</td>
-        <td border="1" style="border: 1px solid black">@student.Email</td>
-
-    </tr>}
-    </table>
-  </div> 
