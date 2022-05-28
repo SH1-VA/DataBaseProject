@@ -51,7 +51,11 @@ app.UseEndpoints(endpoints =>
 
     endpoints.MapControllerRoute(name: "Groups",
         pattern: "Groups/main",
-        defaults: new { controller = "Groups", action = "main" }); 
+        defaults: new { controller = "Groups", action = "main" });
+
+    endpoints.MapControllerRoute(name: "Students",
+        pattern: "Students/search",
+        defaults: new { controller = "Students", action = "search" });
 
     endpoints.MapControllerRoute(name: "Specialitys",
         pattern: "Specialitys/main",

@@ -1,23 +1,23 @@
 {
   "format": 1,
   "restore": {
-    "D:\\GitHub\\DataBaseProject\\DataBaseStorage\\DataBaseStorage.csproj": {}
+    "C:\\Users\\Admin\\Documents\\GitHub\\DataBaseProject\\DataBaseStorage\\DataBaseStorage.csproj": {}
   },
   "projects": {
-    "D:\\GitHub\\DataBaseProject\\DataBaseStorage\\DataBaseStorage.csproj": {
+    "C:\\Users\\Admin\\Documents\\GitHub\\DataBaseProject\\DataBaseStorage\\DataBaseStorage.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "D:\\GitHub\\DataBaseProject\\DataBaseStorage\\DataBaseStorage.csproj",
+        "projectUniqueName": "C:\\Users\\Admin\\Documents\\GitHub\\DataBaseProject\\DataBaseStorage\\DataBaseStorage.csproj",
         "projectName": "DataBaseStorage",
-        "projectPath": "D:\\GitHub\\DataBaseProject\\DataBaseStorage\\DataBaseStorage.csproj",
-        "packagesPath": "C:\\Users\\Иван\\.nuget\\packages\\",
-        "outputPath": "D:\\GitHub\\DataBaseProject\\DataBaseStorage\\obj\\",
+        "projectPath": "C:\\Users\\Admin\\Documents\\GitHub\\DataBaseProject\\DataBaseStorage\\DataBaseStorage.csproj",
+        "packagesPath": "C:\\Users\\Admin\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\Admin\\Documents\\GitHub\\DataBaseProject\\DataBaseStorage\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
         ],
         "configFilePaths": [
-          "C:\\Users\\Иван\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\Admin\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
@@ -84,7 +84,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.203\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.300\\RuntimeIdentifierGraph.json"
         }
       }
     }

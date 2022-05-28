@@ -28,12 +28,12 @@ namespace DataBase.Controllers
         [Route("students")]
         public Task<IList<Student>> GetAll() => _manager.GetAll();
 
-        [HttpGet]
-        public async void Search(string LastName)
-        {
-            var students1 = _manager.Search(LastName);
-            await Main(students1);
-        }
+       // [HttpGet]
+        //public async void Search(string LastName)
+       // {
+       //     var students1 = _manager.Search(LastName);
+        //    await Main(students1);
+        //}
 
 
         [HttpGet]
