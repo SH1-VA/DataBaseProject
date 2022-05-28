@@ -68,11 +68,10 @@ font-size: 230%;line-height: 115%;color: #2A3381;">
         <textarea placeholder="Имя" cols="25" rows="1" Name="Name"></textarea>
         <textarea placeholder="Телефон" cols="15" rows="1" Name="PhoneNumber"></textarea>
         <textarea placeholder="Эл. почта" cols="15" rows="1" Name="Email"></textarea>
-        <select name="Group" >
-            @ViewBag.bag = "GroupNameList"
+        <select name="GroupIdString" >
             @foreach (var Group in ViewBag.bag)
             {
-                <option>@Group</option>
+                <option value = "@Group">@Group</option>
             }
         </select>
         <select name="Subgroup">
