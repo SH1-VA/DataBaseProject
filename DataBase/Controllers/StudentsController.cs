@@ -34,12 +34,21 @@ namespace DataBase.Controllers
             return View(students1);
         }
 
+        [HttpPost]
+        public ActionResult GroupNameList()
+        {
+            //var bag = _manager.GroupNameList();
+            //ViewBag.Groups = new List<string>();
+            ViewBag.bag = _manager.GroupNameList();
+            return View();
+        }
+
         [HttpGet]
         //[Route("students")]
         //public Task Create([FromBody] CreateStudentRequest request) => _manager.Create(request.Name, request.LastName, request.Email, request.PhoneNumber, request.SubGroup/*, request.Number, request.GroupId, request.Group*/);
         public IActionResult Create(CreateStudentRequest model)
         {
-            _manager.Create(model.Name, model.LastName, model.Email, model.PhoneNumber, model.SubGroup, model.GroupIdString);
+            _manager.Create(model.Name, model.LastName, model.Email, model.PhoneNumber, model.GroupIdString, model.SubGroup);
             return RedirectToAction(nameof(Main));
         }
         //string name, string lastname, string email, string phonenumber, bool subgroup, int number, int groupid, Group group
