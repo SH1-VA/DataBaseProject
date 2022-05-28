@@ -11,29 +11,22 @@ namespace DataBase.Controllers
             _manager = manager;
         }
 
-        public async Task<IActionResult> Main(List<Student> anyStudents)
+        public async Task<IActionResult> Main()
         {
-            if (anyStudents.Count != 0)
-            {
-                return View(anyStudents);
-            }
-            else
-            {
                 var students = await _manager.GetAll();
                 return View(students);
-            }
         }
 
         [HttpGet]
         [Route("students")]
         public Task<IList<Student>> GetAll() => _manager.GetAll();
 
-       // [HttpGet]
-        //public async void Search(string LastName)
-       // {
-       //     var students1 = _manager.Search(LastName);
-        //    await Main(students1);
-        //}
+        [HttpGet]
+        public async Task<IActionResult> Search(string LastName)
+        {
+            var students1 = _manager.Search(LastName);
+            return View(students1);
+        }
 
 
         [HttpGet]
