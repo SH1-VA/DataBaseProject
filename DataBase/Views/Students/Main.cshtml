@@ -86,13 +86,23 @@ font-size: 230%;line-height: 115%;color: #2A3381;">
         <textarea placeholder="Введите ID" cols="10" rows="1" name="id"></textarea>
         <button style="position: absolute; top: 32%; left: 12%;" type="submit">удалить</button>
         }
-        @using(Html.BeginForm("название метода", "название контроллера", FormMethod.Post))
+        @using(Html.BeginForm("Edit", "Students", FormMethod.Post))
         {
-        <textarea placeholder="ID" cols="5" rows="1" ID="ID"></textarea>
-        <textarea placeholder="Фамилия" cols="20" rows="1" LastName="LastName"></textarea>
-        <textarea placeholder="Имя" cols="20" rows="1" Name="Name"></textarea>
-        <textarea placeholder="Телефон" cols="20" rows="1" PhoneNumber="PhoneNumber"></textarea>
-        <textarea placeholder="Эл. почта" cols="20" rows="1" Email="Email"></textarea>
+        <textarea placeholder="ID" cols="5" rows="1" name="IdString"></textarea>
+        <textarea placeholder="Фамилия" cols="20" rows="1" name="LastName"></textarea>
+        <textarea placeholder="Имя" cols="20" rows="1" name="Name"></textarea>
+        <textarea placeholder="Телефон" cols="20" rows="1" name="PhoneNumber"></textarea>
+        <textarea placeholder="Эл. почта" cols="20" rows="1"name="Email"></textarea>
+        <select name="GroupIdString" >
+            @foreach (var Group in ViewBag.bag)
+            {
+                <option value = "@Group">@Group</option>
+            }
+        </select>
+        <select name="Subgroup">
+            <option value="True">A</option>
+            <option value="False">B</option>
+        </select>
         <button style="position: absolute;left: 86%" type="submit">редактировать</button>
         }
      </div>

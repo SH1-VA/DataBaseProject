@@ -9,7 +9,6 @@
         }
         public async Task Create(string name, string lastname, string email, string phonenumber, int groupid, bool subgroup /*, int number, int groupid, Group group*/)
         {
- //           int groupid = System.Convert.ToInt32(groupidstring);
             var student = new Student { Name = name, LastName = lastname, Email = email, PhoneNumber = phonenumber, GroupId = groupid, Subgroup = subgroup/*, Number = number, GroupId = groupid*/};
             _context.Students.Add(student);
             await _context.SaveChangesAsync();
@@ -39,6 +38,18 @@
             }
             return students;
         }
+        public List<Student> SortByLastName()
+        {
+            var sameStudent = _context.Students;
+
+            List<Student> students = new List<Student>();
+            foreach (var oneStudent in sameStudent.ToList())
+            {
+                    students.Add(oneStudent);
+            }
+            students.OrderBy(x => x.LastName);
+            return students;
+        }
 
         public List<String> GroupNameList()
         {
@@ -61,5 +72,21 @@
 
         public async Task<IList<Student>> GetAll() => await _context.Students.ToListAsync();
 
+        public async Task Edit(string idstring, string name, string lastname, string email, string phonenumber, string groupidstring, bool subgroup /*, int number, int groupid, Group group*/)
+        {
+            //int groupid = System.Convert.ToInt32(groupidstring);
+            int id = System.Convert.ToInt32(idstring);
+
+            var student = _context.Students.FirstOrDefault(s => s.Id == id);
+            student.Name = name;
+            student.LastName = lastname;
+            student.Email = email;
+            student.PhoneNumber = phonenumber;
+            student.GroupId = SearchGroup(groupidstring);
+            student.Subgroup = subgroup;
+            _context.Students.Update(student);
+
+            await _context.SaveChangesAsync();
+        }
     }
 }

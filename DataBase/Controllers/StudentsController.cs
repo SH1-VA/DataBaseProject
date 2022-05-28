@@ -35,6 +35,13 @@ namespace DataBase.Controllers
             return View(students1);
         }
 
+        [HttpPost]
+        public async Task<IActionResult> SortByLastName()
+        {
+            var students1 = _manager.SortByLastName();
+            return View(students1);
+        }
+
         public int AddGroupId(string GroupIdString)
         {
             int GroupId = _manager.SearchGroup(GroupIdString);
@@ -57,6 +64,14 @@ namespace DataBase.Controllers
         public IActionResult Delete(int id)
         {
             _manager.Delete(id);
+            return RedirectToAction(nameof(Main));
+        }
+
+        [HttpPost]
+        // [Route("students/{id:int}")]
+        public IActionResult Edit(string idstring, string name, string lastname, string email, string phonenumber, string groupidstring, bool subgroup)
+        {
+            _manager.Edit(idstring, name, lastname, email, phonenumber, groupidstring, subgroup);
             return RedirectToAction(nameof(Main));
         }
     }
