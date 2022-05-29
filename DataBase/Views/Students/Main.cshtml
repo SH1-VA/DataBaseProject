@@ -68,23 +68,23 @@ font-size: 230%;line-height: 115%;color: #2A3381;">
         <textarea placeholder="Имя" cols="25" rows="1" Name="Name"></textarea>
         <textarea placeholder="Телефон" cols="15" rows="1" Name="PhoneNumber"></textarea>
         <textarea placeholder="Эл. почта" cols="15" rows="1" Name="Email"></textarea>
-        <select name="GroupIdString" >
+        <select style="position: absolute; height: 30px; top: -1.5%; left: 83%;" name="GroupIdString" >
             @foreach (var Group in ViewBag.bag)
             {
                 <option value = "@Group">@Group</option>
             }
         </select>
-        <select name="Subgroup">
+        <select style="position: absolute; height: 30px; top: -1.5%; left: 97%" name="Subgroup">
             <option value="True">A</option>
-            <option value="False">B</option>
+            <option value="False">Б</option>
         </select>
 
-        <button style="position: absolute; top: -1%; left: 101%;" type="submit">добавить</button>
+        <button style="position: absolute; top: -1.5%; left: 102%;" type="submit">добавить</button>
         }
         @using(Html.BeginForm("Delete", "Students", FormMethod.Post))
         {
         <textarea placeholder="Введите ID" cols="10" rows="1" name="id"></textarea>
-        <button style="position: absolute; top: 32%; left: 12%;" type="submit">удалить</button>
+        <button style="position: absolute; top: 32%; left: 13%;" type="submit">удалить</button>
         }
         @using(Html.BeginForm("Edit", "Students", FormMethod.Post))
         {
@@ -93,23 +93,34 @@ font-size: 230%;line-height: 115%;color: #2A3381;">
         <textarea placeholder="Имя" cols="20" rows="1" name="Name"></textarea>
         <textarea placeholder="Телефон" cols="20" rows="1" name="PhoneNumber"></textarea>
         <textarea placeholder="Эл. почта" cols="20" rows="1"name="Email"></textarea>
-        <select name="GroupIdString" >
+        <select style="position: absolute; height: 30px; top: 66%; left: 101%;" name="GroupIdString" >
             @foreach (var Group in ViewBag.bag)
             {
                 <option value = "@Group">@Group</option>
             }
         </select>
-        <select name="Subgroup">
+        <select style="position: absolute; height: 30px; top: 66%; left: 115%;"name="Subgroup">
             <option value="True">A</option>
             <option value="False">B</option>
         </select>
-        <button style="position: absolute;left: 86%" type="submit">редактировать</button>
+        <button style="position: absolute;left: 120%" type="submit">редактировать</button>
         }
      </div>
 
     <div style="position: absolute; top: 48%;">
      <table border="1" cellpadding="10" cellspacing="10" style="border: 1% solid black">
-		<caption align="top" style="color: black;font-size: 32px;line-height: 39px;"> Список студентов</caption>
+		<caption align="top" style="color: black;font-size: 32px;line-height: 39px;"> Список студентов 
+            <form>
+        <button style="position: absolute; font-size: 16px;line-height: 19px; top: 6%; left: 56%;
+        display: inline-block;background: #2d5f84; color: white;
+        padding: 3rem, 1.5rem; text-decoration: none;
+        border-radius: 7%;">
+        Сортировка по фамилии ▼
+        </button>
+        </form>
+
+
+        </caption>
         <tr>
             <th border="1" style="border: 1px solid black">
                 ID
@@ -139,3 +150,4 @@ font-size: 230%;line-height: 115%;color: #2A3381;">
     </tr>}
     </table>
   </div> 
+ 
