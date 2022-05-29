@@ -42,6 +42,13 @@ namespace DataBase.Controllers
             return View(students1);
         }
 
+        [HttpPost]
+        public async Task<IActionResult> SortById()
+        {
+            var students1 = _manager.SortById();
+            return View(students1);
+        }
+
         public int AddGroupId(string GroupIdString)
         {
             int GroupId = _manager.SearchGroup(GroupIdString);

@@ -17,5 +17,24 @@
         //    ModularJournal = modularJournal;
         //    Number = number;
         //}
+        public static List<Student> SortById(List<Student> students)
+        {
+            int min = 0;
+            for (int i = 0; i < students.Count; i++)
+            {
+                for(int j = i; j < students.Count; j++)
+                {
+                    if (students[j].Id < students[min].Id)
+                    {
+                        min = j;
+                    }    
+                    var tempStudent = students[j];
+                    students[j] = students[min];
+                    students[min] = tempStudent;
+                }
+            }
+
+            return students;
+        }
     }
 }

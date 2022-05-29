@@ -13,5 +13,25 @@
         //    Classes = classes;
         //    Hours = hours;
         //}
+
+        public static List<Teacher> SortById(List<Teacher> teachers)
+        {
+            int min = 0;
+            for (int i = 0; i < teachers.Count; i++)
+            {
+                for (int j = i; j < teachers.Count; j++)
+                {
+                    if (teachers[j].Id < teachers[min].Id)
+                    {
+                        min = j;
+                    }
+                    var tempStudent = teachers[j];
+                    teachers[j] = teachers[min];
+                    teachers[min] = tempStudent;
+                }
+            }
+
+            return teachers;
+        }
     }
 }

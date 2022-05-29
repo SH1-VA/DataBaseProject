@@ -10,5 +10,6 @@
         int SearchGroup(string GroupIdString);
         Task Edit(string idstring, string name, string lastname, string email, string phonenumber, string groupidstring, bool subgroup);
         List<Student> SortByLastName();
+        List<Student> SortById();
     }
 }

@@ -25,6 +25,21 @@
             }
         }
 
+        public async Task Edit(string idstring, string name, string email, string phonenumber, string audiencenumberString /*, int number, int groupid, Group group*/)
+        {
+            //int groupid = System.Convert.ToInt32(groupidstring);
+            int id = System.Convert.ToInt32(idstring);
+
+            var department = _context.Departments.FirstOrDefault(d => d.Id == id);
+            department.Name = name;
+            department.Email = email;
+            department.PhoneNumber = phonenumber;
+            department.AudienceNumber = System.Convert.ToInt32(audiencenumberString);
+            _context.Departments.Update(department);
+
+            await _context.SaveChangesAsync();
+        }
+
         public async Task<IList<Department>> GetAll() => await _context.Departments.ToListAsync();
     }
 }

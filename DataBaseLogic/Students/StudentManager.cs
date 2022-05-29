@@ -47,8 +47,24 @@
             {
                     students.Add(oneStudent);
             }
-            students.OrderBy(x => x.LastName);
+            students.Sort((x, y) => String.Compare(x.LastName, y.LastName));
             return students;
+        }
+
+        public List<Student> SortById()
+        {
+            var sameStudent = _context.Students;
+
+            List<Student> students = new List<Student>();
+            foreach (var oneStudent in sameStudent.ToList())
+            {
+                students.Add(oneStudent);
+            }
+            var sortedStudents = Student.SortById(students);
+
+            sortedStudents.Reverse();
+
+            return sortedStudents;
         }
 
         public List<String> GroupNameList()

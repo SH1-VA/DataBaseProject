@@ -5,5 +5,6 @@
         Task<IList<Department>> GetAll();
         Task Create(string name, string email, string phonenumber, string audiencenumberString);
         Task Delete(int id);
+        Task Edit(string idstring, string name, string email, string phonenumber, string audiencenumberString);
     }
 }

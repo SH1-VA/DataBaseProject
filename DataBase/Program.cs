@@ -41,9 +41,9 @@ app.UseEndpoints(endpoints =>
         pattern: "Teachers/main",
         defaults: new { controller = "Teachers", action = "main" });
 
-    endpoints.MapControllerRoute(name: "Students",
-        pattern: "Students/main",
-        defaults: new { controller = "Students", action = "main" });
+    endpoints.MapControllerRoute(name: "Departments",
+        pattern: "Departments/main",
+        defaults: new { controller = "Departments", action = "main" });
 
     endpoints.MapControllerRoute(name: "Disciplines",
         pattern: "Disciplines/main",
@@ -56,6 +56,26 @@ app.UseEndpoints(endpoints =>
     endpoints.MapControllerRoute(name: "Students",
         pattern: "Students/search/{LastName?}",
         defaults: new { controller = "Students", action = "search" });
+
+    endpoints.MapControllerRoute(name: "Teachers",
+        pattern: "Teachers/search/{LastName?}",
+        defaults: new { controller = "Teachers", action = "search" });
+
+    endpoints.MapControllerRoute(name: "Students",
+        pattern: "Students/SortByLastName/{LastName?}",
+        defaults: new { controller = "Students", action = "SortByLastName" });
+
+    endpoints.MapControllerRoute(name: "Teachers",
+        pattern: "Teachers/SortByLastName/{LastName?}",
+        defaults: new { controller = "Teachers", action = "SortByLastName" });
+
+    endpoints.MapControllerRoute(name: "Students",
+        pattern: "Students/SortById/{LastName?}",
+        defaults: new { controller = "Students", action = "SortById" });
+
+    endpoints.MapControllerRoute(name: "Teachers",
+    pattern: "Teachers/SortById/{LastName?}",
+    defaults: new { controller = "Teachers", action = "SortById" });
 
     endpoints.MapControllerRoute(name: "Specialitys",
         pattern: "Specialitys/main",
