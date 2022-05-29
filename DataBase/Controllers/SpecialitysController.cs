@@ -37,5 +37,13 @@ namespace DataBase.Controllers
             _manager.Delete(id);
             return RedirectToAction(nameof(Main));
         }
+
+        [HttpPost]
+        // [Route("students/{id:int}")]
+        public IActionResult Edit(string idstring, string code, string name)
+        {
+            _manager.Edit(idstring, code, name);
+            return RedirectToAction(nameof(Main));
+        }
     }
 }

@@ -24,6 +24,18 @@
                 await _context.SaveChangesAsync();
             }
         }
+        public async Task Edit(string idstring, string code, string name)
+        {
+            int id = System.Convert.ToInt32(idstring);
+
+            var speciality = _context.Specialities.FirstOrDefault(s => s.Id == id);
+            speciality.Code = code;
+            speciality.Name = name;
+
+            _context.Specialities.Update(speciality);
+
+            await _context.SaveChangesAsync();
+        }
 
         public async Task<IList<Speciality>> GetAll() => await _context.Specialities.ToListAsync();
     }

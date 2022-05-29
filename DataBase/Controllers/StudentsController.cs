@@ -13,7 +13,7 @@ namespace DataBase.Controllers
 
         public async Task<IActionResult> Main()
         {
-                var students = await _manager.GetAll();
+            var students = await _manager.GetAll();
             ViewBag.bag = _manager.GroupNameList();
             return View(students);
         }
