@@ -57,35 +57,41 @@ font-size: 230%;line-height: 115%;color: #2A3381;">
 	<div style="position: absolute; top: 33%;">
         @using (Html.BeginForm("Create", "Groups", FormMethod.Get))
 		{
-			<textarea placeholder="Название группы" cols="80" rows="1"name="Name"></textarea>
+			<textarea placeholder="Название группы" cols="18" rows="1"name="Name"></textarea>
 			<textarea placeholder="Направление" cols="20" rows="1"name="Orientation"></textarea>
-			<textarea placeholder="Кол-во студентов" cols="12" rows="1" name="NumberOfStudents"></textarea>
-			<select style="position: absolute; height: 30px; top: -1.5%; left: 83%;" name="SpecialityIdString" >
+			<textarea placeholder="Кол-во студентов" cols="17" rows="1" name="NumberOfStudents"></textarea>
+			<select style="position: absolute; height: 30px; top: -1.5%; left: 89%;" name="SpecialityIdString" >
             @foreach (var Speciality in ViewBag.Specialitys)
             {
                 <option value = "@Speciality">@Speciality</option>
             }
             </select>
-			<button style="position: absolute; top: -1%; left: 95%;" type="submit">добавить</button>
+			<button style="position: absolute; background: #2d5f84; color: white;
+				padding: 3rem, 1.5rem; text-decoration: none;
+				border-radius: 7%; top: -1%; left: 150%;" type="submit">ДОБАВИТЬ</button>
 		}
 		@using(Html.BeginForm("Delete", "Groups", FormMethod.Post))
 		{
         <textarea placeholder="Введите ID" cols="10" rows="1" name="id"></textarea>
-        <button style="position: absolute; top: 32%; left: 10%;" type="submit">удалить</button>
+        <button style="position: absolute; background: #2d5f84; color: white;
+				padding: 3rem, 1.5rem; text-decoration: none;
+				border-radius: 7%; top: 32%; left: 19%;" type="submit">УДАЛИТЬ</button>
         }
         @using(Html.BeginForm("Edit", "Groups", FormMethod.Post))
 		{
-			<textarea placeholder="ID" cols="80" rows="1"name="IdString"></textarea>
-			<textarea placeholder="Название группы" cols="80" rows="1"name="Name"></textarea>
+			<textarea placeholder="ID" cols="5" rows="1"name="IdString"></textarea>
+			<textarea placeholder="Название группы" cols="18" rows="1"name="Name"></textarea>
 			<textarea placeholder="Направление" cols="20" rows="1"name="Orientation"></textarea>
-			<textarea placeholder="Кол-во студентов" cols="12" rows="1" name="NumberOfStudents"></textarea>
-			<select style="position: absolute; height: 30px; top: 50%; left: 83%;" name="SpecialityIdString" >
+			<textarea placeholder="Кол-во студентов" cols="17" rows="1" name="NumberOfStudents"></textarea>
+			<select style="position: absolute; height: 30px; top: 66%; left: 101%;" name="SpecialityIdString" >
             @foreach (var Speciality in ViewBag.Specialitys)
             {
                 <option value = "@Speciality">@Speciality</option>
             }
             </select>
-			<button style="position: absolute; top: -1%; left: 50%;" type="submit">редактировать</button>
+			<button style="position: absolute; background: #2d5f84; color: white;
+				padding: 3rem, 1.5rem; text-decoration: none;
+				border-radius: 7%; top: 66%; left: 162%;" type="submit">РЕДАКТИРОВАТЬ</button>
 		}
      </div>
 

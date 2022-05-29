@@ -59,19 +59,25 @@ font-size: 230%;line-height: 115%;color: #2A3381;">
 		{
 			<textarea placeholder="Код" cols="10" rows="1"name="Name"></textarea>
 			<textarea placeholder="Название специальности" cols="80" rows="1"name="Code"></textarea>
-			<button style="position: absolute; top: -1%; left: 93%;" type="submit">добавить</button>
+			<button style="position: absolute; background: #2d5f84; color: white;
+				padding: 3rem, 1.5rem; text-decoration: none;
+				border-radius: 7%; top: -1%; left: 93%;" type="submit">ДОБАВИТЬ</button>
 		}
 		@using(Html.BeginForm("Delete", "Specialitys", FormMethod.Post))
 		{
         <textarea placeholder="Введите ID" cols="10" rows="1" name="id"></textarea>
-        <button style="position: absolute; top: 32%; left: 14%;" type="submit">удалить</button>
+        <button style="position: absolute; background: #2d5f84; color: white;
+				padding: 3rem, 1.5rem; text-decoration: none;
+				border-radius: 7%; top: 32%; left: 14%;" type="submit">УДАЛИТЬ</button>
         }
 		@using(Html.BeginForm("Edit", "Specialitys", FormMethod.Post))
 		{
             <textarea placeholder="ID" cols="5" rows="1" name="IdString"></textarea>
             <textarea placeholder="Код" cols="10" rows="1"name="Code"></textarea>
 			<textarea placeholder="Название специальности" cols="80" rows="1"name="Name"></textarea>
-            <button style="position: absolute;left: 101%"type="submit">редактировать</button>
+            <button style="position: absolute; background: #2d5f84; color: white;
+				padding: 3rem, 1.5rem; text-decoration: none;
+				border-radius: 7%; left: 101%"type="submit">РЕДАКТИРОВАТЬ</button>
         }
 </div>
 

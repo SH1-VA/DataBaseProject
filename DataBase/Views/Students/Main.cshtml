@@ -79,12 +79,16 @@ font-size: 230%;line-height: 115%;color: #2A3381;">
             <option value="False">Б</option>
         </select>
 
-        <button style="position: absolute; top: -1.5%; left: 102%;" type="submit">добавить</button>
+        <button style="position: absolute; background: #2d5f84; color: white;
+				padding: 3rem, 1.5rem; text-decoration: none;
+				border-radius: 7%; top: -1.5%; left: 102%;" type="submit">ДОБАВИТЬ</button>
         }
         @using(Html.BeginForm("Delete", "Students", FormMethod.Post))
         {
         <textarea placeholder="Введите ID" cols="10" rows="1" name="id"></textarea>
-        <button style="position: absolute; top: 32%; left: 13%;" type="submit">удалить</button>
+        <button style="position: absolute; background: #2d5f84; color: white;
+				padding: 3rem, 1.5rem; text-decoration: none;
+				border-radius: 7%; top: 32%; left: 14%;" type="submit">УДАЛИТЬ</button>
         }
         @using(Html.BeginForm("Edit", "Students", FormMethod.Post))
         {
@@ -103,33 +107,33 @@ font-size: 230%;line-height: 115%;color: #2A3381;">
             <option value="True">A</option>
             <option value="False">B</option>
         </select>
-        <button style="position: absolute;left: 120%" type="submit">редактировать</button>
+        <button style="position: absolute; background: #2d5f84; color: white;
+				padding: 3rem, 1.5rem; text-decoration: none;
+				border-radius: 7%; left: 120%" type="submit">РЕДАКТИРОВАТЬ</button>
         }
      </div>
 
 
     <div style="position: absolute; top: 48%;">
      <table border="1" cellpadding="10" cellspacing="10" style="border: 1% solid black">
-		<caption align="top" style="color: black;font-size: 32px;line-height: 39px;"> Список студентов 
+		<caption align="top" style="color: black;font-size: 32px;line-height: 39px;"> Список студентов
 
-        <form style="position: absolute; font-size: 16px;line-height: 19px; top: 6%; left: 56%;
+             <form asp-controller="Students" asp-action="SortByLastName">
+        <button title="Сортировать по фамилии" style="position: absolute; font-size: 16px;line-height: 19px; top: 6%; left: 84%;
         display: inline-block;background: #2d5f84; color: white;
         padding: 3rem, 1.5rem; text-decoration: none;
-        border-radius: 7%;" asp-controller="Students" asp-action="SortByLastName">
-        <button>
-        Сортировка по фамилии ▼
+        border-radius: 7%;" >
+         A-Я
         </button>
         </form>
-
-        <form style="position: absolute; font-size: 16px;line-height: 19px; top: 16%; left: 56%;
+<form asp-controller="Students" asp-action="SortById">
+        <button title="Сортировать по ID" style="position: absolute; font-size: 16px;line-height: 19px; top: 6%; left: 93%;
         display: inline-block;background: #2d5f84; color: white;
         padding: 3rem, 1.5rem; text-decoration: none;
-        border-radius: 7%;" asp-controller="Students" asp-action="SortById">
-        <button>
-        Сортировка по Id ▼
+        border-radius: 7%;">
+        ID
         </button>
         </form>
-
 
         </caption>
         <tr>

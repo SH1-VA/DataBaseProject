@@ -58,31 +58,37 @@ font-size: 230%;line-height: 115%;color: #2A3381;">
 		{
 			<textarea placeholder="Название дисциплины" cols="50" rows="1"name="Name"></textarea>
 			<textarea placeholder="Учебные часы" cols="12" rows="1"name="Hours"></textarea>
-			<select style="position: absolute; height: 30px; top: -1.5%; left: 83%;" name="DepartmentIdString" >
+			<select style="position: absolute; height: 30px; top: -1.5%; left: 90%;" name="DepartmentIdString" >
             @foreach (var Department in ViewBag.Departments)
             {
                 <option value = "@Department">@Department</option>
             }
             </select>
-			<button style="position: absolute; top: -1%; left: 110%;" type="submit">ДОБАВИТЬ</button>
+			<button style="position: absolute; background: #2d5f84; color: white;
+				padding: 3rem, 1.5rem; text-decoration: none;
+				border-radius: 7%; top: -1%; left: 168%;" type="submit">ДОБАВИТЬ</button>
 		}
         @using(Html.BeginForm("Delete", "Disciplines", FormMethod.Post))
 		{
         <textarea placeholder="Введите ID" cols="10" rows="1" name="id"></textarea>
-        <button style="position: absolute; top: 32%; left: 10%;" type="submit">УДАЛИТЬ</button>
+        <button style="position: absolute; background: #2d5f84; color: white;
+				padding: 3rem, 1.5rem; text-decoration: none;
+				border-radius: 7%; top: 32%; left: 18%;" type="submit">УДАЛИТЬ</button>
         }
         @using(Html.BeginForm("Edit", "Disciplines", FormMethod.Post))
 		{
             <textarea placeholder="ID" cols="5" rows="1" name="IdString"></textarea>
             <textarea placeholder="Название дисциплины" cols="50" rows="1"name="Name"></textarea>
 			<textarea placeholder="Учебные часы" cols="12" rows="1"name="Hours"></textarea>
-			<select style="position: absolute; height: 30px; top: 20%; left: 130%;" name="DepartmentIdString" >
+			<select style="position: absolute; height: 30px; top: 66%; left: 101%;" name="DepartmentIdString" >
             @foreach (var Department in ViewBag.Departments)
             {
                 <option value = "@Department">@Department</option>
             }
             </select>
-            <button style="position: absolute;left: 121%"type="submit">РЕДАКТИРОВАТЬ</button>
+            <button style="position: absolute; background: #2d5f84; color: white;
+				padding: 3rem, 1.5rem; text-decoration: none;
+				border-radius: 7%; left: 179%"type="submit">РЕДАКТИРОВАТЬ</button>
         }
         </div>
          <div style="position: absolute; top: 48%;">
