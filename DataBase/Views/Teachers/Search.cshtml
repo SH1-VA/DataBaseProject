@@ -65,6 +65,8 @@ font-size: 230%;line-height: 115%;color: #2A3381;">
     </form>
 
 
+ @if (ViewBag.count == 1)
+    {
  <div style="position: absolute; top: 48%;">
      <table border="1" cellpadding="10" cellspacing="10" style="border: 1% solid black">
 		<caption align="top" style="color: black;font-size: 32px;line-height: 39px;"> Список преподавателей</caption>
@@ -97,3 +99,8 @@ font-size: 230%;line-height: 115%;color: #2A3381;">
     </tr>}
     </table>
   </div> 
+  }
+esle
+{
+    <p>Таких преподавателей нет</p>
+}

@@ -50,7 +50,10 @@ namespace DataBase.Controllers
         // [Route("students/{id:int}")]
         public IActionResult Edit(string idstring, string name, string hours, string departmentidstring)
         {
-            _manager.Edit(idstring, name, hours, departmentidstring);
+            if((idstring!= null)&&(name!= null)&&(hours!= null)&&(departmentidstring!= null))
+            { 
+                _manager.Edit(idstring, name, hours, departmentidstring);
+            }
             return RedirectToAction(nameof(Main));
         }
     }

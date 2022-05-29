@@ -32,6 +32,14 @@ namespace DataBase.Controllers
         public async Task<IActionResult> Search(string LastName)
         {
             var students1 = _manager.Search(LastName);
+            if (students1.Count == 0)
+            {
+                ViewBag.count = 0;
+            }
+            else
+            {
+                ViewBag.count = 1;
+            }
             return View(students1);
         }
 
@@ -78,7 +86,10 @@ namespace DataBase.Controllers
         // [Route("students/{id:int}")]
         public IActionResult Edit(string idstring, string name, string lastname, string email, string phonenumber, string groupidstring, bool subgroup)
         {
+            if((idstring!=null)&&(name!=null)&&(lastname!=null)&&(email!=null)&&(phonenumber!=null)&&(groupidstring!=null)&&(subgroup!=null))
+            { 
             _manager.Edit(idstring, name, lastname, email, phonenumber, groupidstring, subgroup);
+            }
             return RedirectToAction(nameof(Main));
         }
     }

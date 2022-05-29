@@ -47,7 +47,10 @@
         // [Route("students/{id:int}")]
         public IActionResult Edit(string idstring, string name, string orientation, int numberofstudents, string specialityidstring)
         {
-            _manager.Edit(idstring, name, orientation, numberofstudents, specialityidstring);
+            if((idstring!=null)&&(name!=null)&&(orientation!=null)&&(numberofstudents!=null)&&(specialityidstring!=null))
+            { 
+                _manager.Edit(idstring, name, orientation, numberofstudents, specialityidstring);
+            }
             return RedirectToAction(nameof(Main));
         }
     }
