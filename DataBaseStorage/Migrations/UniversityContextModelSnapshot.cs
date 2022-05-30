@@ -146,6 +146,10 @@ namespace DataBaseStorage.Migrations
                         .IsRequired()
                         .HasColumnType("nvarchar(max)");
 
+                    b.Property<string>("MiddleName")
+                        .IsRequired()
+                        .HasColumnType("nvarchar(max)");
+
                     b.Property<string>("Name")
                         .IsRequired()
                         .HasColumnType("nvarchar(max)");
@@ -158,6 +162,8 @@ namespace DataBaseStorage.Migrations
                         .HasColumnType("bit");
 
                     b.HasKey("Id");
+
+                    b.HasIndex("GroupId");
 
                     b.ToTable("Students");
                 });
@@ -181,6 +187,10 @@ namespace DataBaseStorage.Migrations
                         .HasColumnType("int");
 
                     b.Property<string>("LastName")
+                        .IsRequired()
+                        .HasColumnType("nvarchar(max)");
+
+                    b.Property<string>("MiddleName")
                         .IsRequired()
                         .HasColumnType("nvarchar(max)");
 
@@ -219,6 +229,17 @@ namespace DataBaseStorage.Migrations
                         .IsRequired();
 
                     b.Navigation("Speciality");
+                });
+
+            modelBuilder.Entity("DataBase.Storage.Entity.Student", b =>
+                {
+                    b.HasOne("DataBase.Storage.Entity.Group", "Group")
+                        .WithMany()
+                        .HasForeignKey("GroupId")
+                        .OnDelete(DeleteBehavior.Cascade)
+                        .IsRequired();
+
+                    b.Navigation("Group");
                 });
 
             modelBuilder.Entity("DataBase.Storage.Entity.Teacher", b =>

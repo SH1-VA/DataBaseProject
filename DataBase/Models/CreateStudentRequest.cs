@@ -8,6 +8,7 @@
         public string PhoneNumber { get; set; }
         public bool SubGroup { get; set; }
         public string GroupIdString { get; set; }
+        public string MiddleName { get; set; }              //Отчество
         //public int Number { get; set; }
         //public Group Group { get; set; }
         //string name, string lastname, string email, string phonenumber, bool subgroup, int number, int groupid, Group group
