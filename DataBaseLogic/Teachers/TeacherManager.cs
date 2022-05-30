@@ -8,10 +8,10 @@
             _context = context;
         }
 
-        public async Task Create(string name, string lastname, string email, string phonenumber, string hoursstring, int DepartmentId)
+        public async Task Create(string lastname, string name, string Middlename, string email, string phonenumber, string hoursstring, int DepartmentId)
         {
             var hours = System.Convert.ToInt32(hoursstring);
-            var teacher = new Teacher { Name = name, LastName = lastname, Email = email, PhoneNumber = phonenumber, Hours = hours, DepartmentId = DepartmentId};
+            var teacher = new Teacher { LastName = lastname, Name = name, MiddleName = Middlename, Email = email, PhoneNumber = phonenumber, Hours = hours, DepartmentId = DepartmentId};
             _context.Teachers.Add(teacher);
             await _context.SaveChangesAsync();
         }
@@ -78,14 +78,15 @@
             return sortedTeachers;
         }
 
-        public async Task Edit(string idstring, string name, string lastname, string email, string phonenumber, int hours, string departmentidstring /*, int number, int groupid, Group group*/)
+        public async Task Edit(string idstring, string lastname, string name, string Middlename, string email, string phonenumber, int hours, string departmentidstring /*, int number, int groupid, Group group*/)
         {
             //int groupid = System.Convert.ToInt32(groupidstring);
             int id = System.Convert.ToInt32(idstring);
 
             var Teacher = _context.Teachers.FirstOrDefault(t => t.Id == id);
-            Teacher.Name = name;
             Teacher.LastName = lastname;
+            Teacher.Name = name;
+            Teacher.MiddleName = Middlename;
             Teacher.Email = email;
             Teacher.PhoneNumber = phonenumber;
             Teacher.DepartmentId = SearchDepartment(departmentidstring);

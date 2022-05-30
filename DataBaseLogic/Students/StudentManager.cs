@@ -7,11 +7,11 @@
         {
             _context = context;
         }
-        public async Task Create(string name, string lastname, string email, string phonenumber, int groupid, bool subgroup /*, int number, int groupid, Group group*/)
+        public async Task Create(string lastname, string name, string Middlename, string email, string phonenumber, int groupid, bool subgroup /*, int number, int groupid, Group group*/)
         {
-            var student = new Student { Name = name, LastName = lastname, Email = email, PhoneNumber = phonenumber, GroupId = groupid, Subgroup = subgroup/*, Number = number, GroupId = groupid*/};
+            var student = new Student { LastName = lastname, Name = name, MiddleName = Middlename, Email = email, PhoneNumber = phonenumber, GroupId = groupid, Subgroup = subgroup/*, Number = number, GroupId = groupid*/};
             _context.Students.Add(student);
-            await _context.SaveChangesAsync();
+            await _context.SaveChangesAsync(); 
         }
 
         public async Task Delete(int id)
@@ -88,14 +88,15 @@
 
         public async Task<IList<Student>> GetAll() => await _context.Students.ToListAsync();
 
-        public async Task Edit(string idstring, string name, string lastname, string email, string phonenumber, string groupidstring, bool subgroup /*, int number, int groupid, Group group*/)
+        public async Task Edit(string idstring, string lastname, string name, string Middlename, string email, string phonenumber, string groupidstring, bool subgroup /*, int number, int groupid, Group group*/)
         {
             //int groupid = System.Convert.ToInt32(groupidstring);
             int id = System.Convert.ToInt32(idstring);
 
             var student = _context.Students.FirstOrDefault(s => s.Id == id);
-            student.Name = name;
             student.LastName = lastname;
+            student.Name = name;
+            student.MiddleName = Middlename;
             student.Email = email;
             student.PhoneNumber = phonenumber;
             student.GroupId = SearchGroup(groupidstring);

@@ -69,10 +69,10 @@ namespace DataBase.Controllers
         public IActionResult Create(CreateStudentRequest model)
         {
             int GroupId = AddGroupId(model.GroupIdString);
-            _manager.Create(model.Name, model.LastName, model.Email, model.PhoneNumber, GroupId, model.SubGroup);
+            _manager.Create(model.LastName, model.Name, model.MiddleName, model.Email, model.PhoneNumber, GroupId, model.SubGroup);
             return RedirectToAction(nameof(Main));
         }
-        //string name, string lastname, string email, string phonenumber, bool subgroup, int number, int groupid, Group group
+        
 
         [HttpPost]
         // [Route("students/{id:int}")]
@@ -84,11 +84,11 @@ namespace DataBase.Controllers
 
         [HttpPost]
         // [Route("students/{id:int}")]
-        public IActionResult Edit(string idstring, string name, string lastname, string email, string phonenumber, string groupidstring, bool subgroup)
+        public IActionResult Edit(string idstring, string lastname, string name, string Middlename, string email, string phonenumber, string groupidstring, bool subgroup)
         {
             if((idstring!=null)&&(name!=null)&&(lastname!=null)&&(email!=null)&&(phonenumber!=null))
             { 
-            _manager.Edit(idstring, name, lastname, email, phonenumber, groupidstring, subgroup);
+            _manager.Edit(idstring, lastname, name, Middlename, email, phonenumber, groupidstring, subgroup);
             }
             return RedirectToAction(nameof(Main));
         }

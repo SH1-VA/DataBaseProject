@@ -66,7 +66,7 @@ namespace DataBase.Controllers
         public IActionResult Create(CreateTeacherRequest model)
         {
             int DepartmentId = AddDepartmentId(model.DepartmentIdString);
-            _manager.Create(model.Name, model.LastName, model.Email, model.PhoneNumber, model.Hours, DepartmentId);
+            _manager.Create(model.LastName, model.Name, model.MiddleName, model.Email, model.PhoneNumber, model.Hours, DepartmentId);
             return RedirectToAction(nameof(Main));
         }
 
@@ -79,11 +79,11 @@ namespace DataBase.Controllers
 
         [HttpPost]
         //[Route("students/{id:int}")]
-        public IActionResult Edit(string idstring, string name, string lastname, string email, string phonenumber, int hours, string departmentidstring)
+        public IActionResult Edit(string idstring, string lastname, string name, string Middlename, string email, string phonenumber, int hours, string departmentidstring)
         {
             if((idstring!=null)&&(name!=null)&&(lastname!=null)&&(email!=null)&&(phonenumber!=null)&&(hours!=null))
             { 
-                _manager.Edit(idstring, name, lastname, email, phonenumber, hours, departmentidstring);
+                _manager.Edit(idstring, lastname, name, Middlename, email, phonenumber, hours, departmentidstring);
             }
             return RedirectToAction(nameof(Main));
         }
