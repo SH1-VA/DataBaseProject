@@ -81,7 +81,7 @@ namespace DataBase.Controllers
         //[Route("students/{id:int}")]
         public IActionResult Edit(string idstring, string name, string lastname, string email, string phonenumber, int hours, string departmentidstring)
         {
-            if((idstring!=null)&&(name!=null)&&(lastname!=null&&(email!=null)&&(phonenumber!=null)&&(hours!=null)&&(departmentidstring!=null))
+            if((idstring!=null)&&(name!=null)&&(lastname!=null)&&(email!=null)&&(phonenumber!=null)&&(hours!=null))
             { 
                 _manager.Edit(idstring, name, lastname, email, phonenumber, hours, departmentidstring);
             }

@@ -86,7 +86,7 @@ namespace DataBase.Controllers
         // [Route("students/{id:int}")]
         public IActionResult Edit(string idstring, string name, string lastname, string email, string phonenumber, string groupidstring, bool subgroup)
         {
-            if((idstring!=null)&&(name!=null)&&(lastname!=null)&&(email!=null)&&(phonenumber!=null)&&(groupidstring!=null)&&(subgroup!=null))
+            if((idstring!=null)&&(name!=null)&&(lastname!=null)&&(email!=null)&&(phonenumber!=null))
             { 
             _manager.Edit(idstring, name, lastname, email, phonenumber, groupidstring, subgroup);
             }
