@@ -60,7 +60,7 @@ font-size: 230%;line-height: 115%;color: #2A3381;">
 			<textarea placeholder="Название группы" cols="18" rows="1"name="Name"></textarea>
 			<textarea placeholder="Направление" cols="20" rows="1"name="Orientation"></textarea>
 			<textarea placeholder="Кол-во студентов" cols="17" rows="1" name="NumberOfStudents"></textarea>
-			<select style="position: absolute; height: 30px; top: -1.5%; left: 89%;" name="SpecialityIdString" >
+			<select style="position: absolute; height: 30px; width: 60%; top: -1.5%; left: 89%;" name="SpecialityIdString" >
             @foreach (var Speciality in ViewBag.Specialitys)
             {
                 <option value = "@Speciality">@Speciality</option>
@@ -83,7 +83,7 @@ font-size: 230%;line-height: 115%;color: #2A3381;">
 			<textarea placeholder="Название группы" cols="18" rows="1"name="Name"></textarea>
 			<textarea placeholder="Направление" cols="20" rows="1"name="Orientation"></textarea>
 			<textarea placeholder="Кол-во студентов" cols="17" rows="1" name="NumberOfStudents"></textarea>
-			<select style="position: absolute; height: 30px; top: 66%; left: 101%;" name="SpecialityIdString" >
+			<select style="position: absolute; height: 30px; width: 60%; top: 66%; left: 101%;" name="SpecialityIdString" >
             @foreach (var Speciality in ViewBag.Specialitys)
             {
                 <option value = "@Speciality">@Speciality</option>

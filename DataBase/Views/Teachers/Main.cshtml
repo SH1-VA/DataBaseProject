@@ -65,10 +65,11 @@ font-size: 230%;line-height: 115%;color: #2A3381;">
 		{
 			<textarea placeholder="Фамилия" cols="15" rows="1" Name="LastName"></textarea>
 			<textarea placeholder="Имя" cols="15" rows="1" Name="Name"></textarea>
+            <textarea placeholder="Отчество" cols="20" rows="1" Name="MiddleName"></textarea>
 			<textarea placeholder="Телефон" cols="15" rows="1" Name="PhoneNumber"></textarea>
 			<textarea placeholder="Эл. почта" cols="15" rows="1" Name="Email"></textarea>
-			<textarea placeholder="Количество часов" cols="15" rows="1" Name="Hours"></textarea>
-            <select style="position: absolute; height: 30px; top: -1.5%; left:92%;" name="DepartmentIdString" >
+			<textarea placeholder="Количество часов" cols="12" rows="1" Name="Hours"></textarea>
+            <select style="position: absolute; width: 28%; height: 30px; top: -1.5%; left:94%;" name="DepartmentIdString" >
             @foreach (var Department in ViewBag.Departments)
             {
                 <option value = "@Department">@Department</option>
@@ -76,24 +77,25 @@ font-size: 230%;line-height: 115%;color: #2A3381;">
             </select>
 			<button style="position: absolute; background: #2d5f84; color: white;
 				padding: 3rem, 1.5rem; text-decoration: none;
-				border-radius: 7%; top: -1%; left: 152%;" type="submit">ДОБАВИТЬ</button>
+				border-radius: 7%; top: -1%; left: 123%;" type="submit">ДОБАВИТЬ</button>
 		}
 		@using(Html.BeginForm("Delete", "Teachers", FormMethod.Post))
 		{
         <textarea placeholder="Введите ID" cols="10" rows="1" name="id"></textarea>
         <button style="position: absolute; background: #2d5f84; color: white;
 				padding: 3rem, 1.5rem; text-decoration: none;
-				border-radius: 7%; top: 33%; left: 14%;" type="submit">УДАЛИТЬ</button>
+				border-radius: 7%; top: 33%; left: 11%;" type="submit">УДАЛИТЬ</button>
         }
 		@using(Html.BeginForm("Edit", "Teachers", FormMethod.Post))
 		{
             <textarea placeholder="ID" cols="5" rows="1" name="IdString"></textarea>
 			<textarea placeholder="Фамилия" cols="15" rows="1" Name="LastName"></textarea>
 			<textarea placeholder="Имя" cols="15" rows="1" Name="Name"></textarea>
+            <textarea placeholder="Отчество" cols="20" rows="1" Name="MiddleName"></textarea>
 			<textarea placeholder="Телефон" cols="15" rows="1" Name="PhoneNumber"></textarea>
 			<textarea placeholder="Эл. почта" cols="15" rows="1" Name="Email"></textarea>
-			<textarea placeholder="Количество часов" cols="15" rows="1" Name="Hours"></textarea>
-            <select style="position: absolute; height: 30px; top: 66%; left: 101%;" name="DepartmentIdString" >
+			<textarea placeholder="Количество часов" cols="12" rows="1" Name="Hours"></textarea>
+            <select style="position: absolute; width: 28%; height: 30px; top: 66%; left: 101%;" name="DepartmentIdString" >
             @foreach (var Department in ViewBag.Departments)
             {
                 <option value = "@Department">@Department</option>
@@ -101,16 +103,10 @@ font-size: 230%;line-height: 115%;color: #2A3381;">
             </select>
             <button style="position: absolute; background: #2d5f84; color: white;
 				padding: 3rem, 1.5rem; text-decoration: none;
-				border-radius: 7%; top: 66%; left: 161%" type="submit">РЕДАКТИРОВАТЬ</button>
+				border-radius: 7%; top: 66%; left: 130%" type="submit">РЕДАКТИРОВАТЬ</button>
         }
-	</div>
-
-	<div style="position: absolute; top: 48%;">
-     <table border="1" cellpadding="10" cellspacing="10" style="border: 1% solid black">
-
-		<caption align="top" style="color: black;font-size: 32px;line-height: 39px;"> Список преподавателей
-        <form asp-controller="Teachers" asp-action="SortByLastName">
-         <button title="Сортировать по фамилии" style="position: absolute; font-size: 16px;line-height: 19px; top: 12%; left: 88%;
+         <form asp-controller="Teachers" asp-action="SortByLastName">
+         <button title="Сортировать по фамилии" style="position: absolute; font-size: 16px;line-height: 19px; 
         display: inline-block;background: #2d5f84; color: white;
         padding: 3rem, 1.5rem; text-decoration: none;
         border-radius: 7%;" >
@@ -119,13 +115,19 @@ font-size: 230%;line-height: 115%;color: #2A3381;">
         </form>
 
         <form asp-controller="Teachers" asp-action="SortById">
-        <button title="Сортировать по ID" style="position: absolute; font-size: 16px;line-height: 19px; top: 12%; left: 95%;
-        display: inline-block;background: #2d5f84; color: white;
+        <button title="Сортировать по ID" style="position: absolute; font-size: 16px;line-height: 19px; 
+        display: inline-block;background: #2d5f84; left: 6%; color: white;
         padding: 3rem, 1.5rem; text-decoration: none;
         border-radius: 7%;">
         ID
         </button>
         </form>
+	</div>
+
+	<div style="position: absolute; top: 53%;">
+     <table border="1" cellpadding="10" cellspacing="10" style="border: 1% solid black">
+
+		<caption align="top" style="color: black;font-size: 32px;line-height: 39px;"> Список преподавателей
          </caption>
         <tr>
             <th border="1" style="border: 1px solid black">
@@ -136,6 +138,9 @@ font-size: 230%;line-height: 115%;color: #2A3381;">
             </th>
             <th border="1" style="border: 1px solid black">
                 ИМЯ
+            </th>
+            <th border="1" style="border: 1px solid black">
+               ОТЧЕСТВО
             </th>
             <th border="1" style="border: 1px solid black">
                 НОМЕР ТЕЛЕФОНА
@@ -152,6 +157,7 @@ font-size: 230%;line-height: 115%;color: #2A3381;">
     <tr>
         <td border="1" style="border: 1px solid black">@teacher.Id</td>
         <td border="1" style="border: 1px solid black">@teacher.LastName</td>
+        <td border="1" style="border: 1px solid black">@teacher.MiddleName</td>
         <td border="1" style="border: 1px solid black">@teacher.Name</td>
         <td border="1" style="border: 1px solid black">@teacher.PhoneNumber</td>
         <td border="1" style="border: 1px solid black">@teacher.Email</td>

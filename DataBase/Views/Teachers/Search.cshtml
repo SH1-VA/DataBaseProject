@@ -67,7 +67,7 @@ font-size: 230%;line-height: 115%;color: #2A3381;">
 
  @if (ViewBag.count == 1)
     {
- <div style="position: absolute; top: 48%;">
+ <div style="position: absolute; top: 38%;">
      <table border="1" cellpadding="10" cellspacing="10" style="border: 1% solid black">
 		<caption align="top" style="color: black;font-size: 32px;line-height: 39px;"> Список преподавателей</caption>
         <tr>
@@ -79,6 +79,9 @@ font-size: 230%;line-height: 115%;color: #2A3381;">
             </th>
             <th border="1" style="border: 1px solid black">
                 ИМЯ
+            </th>
+            <th border="1" style="border: 1px solid black">
+                ОТЧЕСТВО
             </th>
             <th border="1" style="border: 1px solid black">
                 НОМЕР ТЕЛЕФОНА
@@ -93,6 +96,7 @@ font-size: 230%;line-height: 115%;color: #2A3381;">
         <td border="1" style="border: 1px solid black">@teacher.Id</td>
         <td border="1" style="border: 1px solid black">@teacher.LastName</td>
         <td border="1" style="border: 1px solid black">@teacher.Name</td>
+        <td border="1" style="border: 1px solid black">@teacher.MiddleName</td>
         <td border="1" style="border: 1px solid black">@teacher.PhoneNumber</td>
         <td border="1" style="border: 1px solid black">@teacher.Email</td>
 
@@ -100,7 +104,9 @@ font-size: 230%;line-height: 115%;color: #2A3381;">
     </table>
   </div> 
   }
-esle
+@if (ViewBag.count == 0)
 {
-    <p>Таких преподавателей нет</p>
+    <div style="position: absolute;width: 51%;height: 15%;
+font-family: 'Inter';font-style: normal;font-weight: 400; left: 35%; top: 50%;
+font-size: 230%;line-height: 115%;color: #2A3381;"> Таких преподавателей нет! </div>
 }

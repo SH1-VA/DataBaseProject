@@ -58,7 +58,7 @@ font-size: 230%;line-height: 115%;color: #2A3381;">
 		{
 			<textarea placeholder="Название дисциплины" cols="50" rows="1"name="Name"></textarea>
 			<textarea placeholder="Учебные часы" cols="12" rows="1"name="Hours"></textarea>
-			<select style="position: absolute; height: 30px; top: -1.5%; left: 90%;" name="DepartmentIdString" >
+			<select style="position: absolute; height: 30px; width: 47%; top: -1.5%; left: 90%;" name="DepartmentIdString" >
             @foreach (var Department in ViewBag.Departments)
             {
                 <option value = "@Department">@Department</option>
@@ -66,7 +66,7 @@ font-size: 230%;line-height: 115%;color: #2A3381;">
             </select>
 			<button style="position: absolute; background: #2d5f84; color: white;
 				padding: 3rem, 1.5rem; text-decoration: none;
-				border-radius: 7%; top: -1%; left: 168%;" type="submit">ДОБАВИТЬ</button>
+				border-radius: 7%; top: -1%; left: 138%;" type="submit">ДОБАВИТЬ</button>
 		}
         @using(Html.BeginForm("Delete", "Disciplines", FormMethod.Post))
 		{
@@ -80,7 +80,7 @@ font-size: 230%;line-height: 115%;color: #2A3381;">
             <textarea placeholder="ID" cols="5" rows="1" name="IdString"></textarea>
             <textarea placeholder="Название дисциплины" cols="50" rows="1"name="Name"></textarea>
 			<textarea placeholder="Учебные часы" cols="12" rows="1"name="Hours"></textarea>
-			<select style="position: absolute; height: 30px; top: 66%; left: 101%;" name="DepartmentIdString" >
+			<select style="position: absolute; height: 30px; width: 47%; top: 66%; left: 101%;" name="DepartmentIdString" >
             @foreach (var Department in ViewBag.Departments)
             {
                 <option value = "@Department">@Department</option>
@@ -88,7 +88,7 @@ font-size: 230%;line-height: 115%;color: #2A3381;">
             </select>
             <button style="position: absolute; background: #2d5f84; color: white;
 				padding: 3rem, 1.5rem; text-decoration: none;
-				border-radius: 7%; left: 179%"type="submit">РЕДАКТИРОВАТЬ</button>
+				border-radius: 7%; left: 149%"type="submit">РЕДАКТИРОВАТЬ</button>
         }
         </div>
          <div style="position: absolute; top: 48%;">
